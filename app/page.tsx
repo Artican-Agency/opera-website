@@ -1,3 +1,4 @@
+import AboutUs from "@/components/AboutUs";
 import BackgroundSlider from "@/components/BackgroundSlider";
 import BlogRecent from "@/components/BlogRecent";
 import RelevantProducts from "@/components/RelevantProducts";
@@ -10,6 +11,7 @@ export default function Home() {
       <StatSection />
       <RelevantProducts />
       <BlogRecent />
+      <AboutUs />
     </main>
   );
 }
