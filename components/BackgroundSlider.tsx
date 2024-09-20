@@ -13,9 +13,9 @@ import { CircleHelp, Globe, Menu } from "lucide-react";
 
 export default function BackgroundSlider() {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-screen">
+    <div className="flex flex-col justify-center items-center w-full h-[800px]">
       <nav className="absolute top-0 z-50 flex items-center sm:justify-center justify-between w-full my-4">
-        <div className="flex justify-between items- md:w-2/3 w-5/6 space-x-6 ">
+        <div className="flex justify-between items- md:w-2/3 w-11/12 space-x-6 ">
           <a href="/">
             <Image
               src="/logo-opera.svg"
@@ -103,6 +103,8 @@ export default function BackgroundSlider() {
       <div className="absolute inset-0 z-20 flex items-center justify-around xl:w-2/3 m-4">
         <HeroSection />
       </div>
+
+    
     </div>
   );
 }
