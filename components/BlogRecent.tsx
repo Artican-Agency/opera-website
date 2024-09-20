@@ -1,16 +1,20 @@
-"use client"
+"use client";
 import { ArrowRight } from "lucide-react";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import bgPhoto from "../public/bg-1.png";
 import bgPhoto2 from "../public/bg-2.png";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
+import { useWindowWidth } from "@react-hook/window-size";
 
 function BlogRecent() {
+  const windoWidth = useWindowWidth();
+
   return (
-    <section className="bg-white flex flex-col justify-between items-start h-full px-24">
+    <section className="bg-white flex flex-col justify-between items-center h-full lg:px-24 px-4">
       <div className="flex justify-between text-center w-full">
         <h1 className="text-[#2F2F2F] text-5xl font-semibold">
           Les blogs recents
@@ -61,31 +65,32 @@ function BlogRecent() {
         </div>
       </div>
 
-      <Swiper
-        centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-        className="w-full h-full z-0 myswiper">
-        <SwiperSlide>
-          <Image
-            src={bgPhoto}
-            alt="Photo by Drew Beamer"
-            fill
-            className="object-cover max-w-full h-auto"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Image
-            src={bgPhoto2}
-            alt="Photo by Drew Beamer"
-            fill
-            className="object-cover max-w-full w-full h-auto"
-          />
-        </SwiperSlide>
-      </Swiper>
+      <div className="2xl:hidden w-full h-96 py-4">
+        <Swiper
+          autoplay={{
+            delay: 3000,
+          }}
+          slidesPerView={windoWidth > 500 ? 1.5 : 1}
+          modules={[Autoplay]}
+          className="w-full h-full z-0 myswiper">
+          <SwiperSlide>
+            <Image
+              src={bgPhoto}
+              alt="Photo by Drew Beamer"
+              fill
+              className="object-cover max-w-full h-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={bgPhoto2}
+              alt="Photo by Drew Beamer"
+              fill
+              className="object-cover max-w-full w-full h-auto"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </section>
   );
 }

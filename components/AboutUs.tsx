@@ -92,7 +92,7 @@ export default function AboutUs() {
             alt="Paintbrush with yellow paint splash"
             height={629}
             width={514}
-            className="object-cover rounded-lg h-[514px] max-w-auto"
+            className="object-cover rounded-lg h-[514px] max-w-[629px] max-md:max-w-[329px]"
           />
         </div>
       </div>
