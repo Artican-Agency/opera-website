@@ -4,6 +4,8 @@ import Image from "next/image";
 import biton from "../public/opera-biton.png";
 import bait from "../public/opera-bait.png";
 import satine from "../public/opera-satine.png";
+import { motion } from "framer-motion";
+
 
 function RelevantProducts() {
   return (
@@ -16,6 +18,7 @@ function RelevantProducts() {
           Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
           vivethe as it was for us to know what was to be done.
         </p>
+        
         <div className="xl:flex hidden justify-center items-center space-x-6">
           <div className="relative h-[296px] w-[257px] flex flex-col justify-center items-center">
             <div className="bg-[#F9BF29] opacity-40 h-[296px] w-[257px] absolute rounded-3xl"></div>
@@ -31,6 +34,7 @@ function RelevantProducts() {
               Béton Fix
             </h2>
           </div>
+
           <div className="relative h-[296px] w-[257px] flex flex-col justify-center items-center">
             <div className="bg-white opacity-40 h-[296px] w-[257px] absolute rounded-3xl"></div>
             <Image
@@ -45,6 +49,7 @@ function RelevantProducts() {
               Opéra Mat
             </h2>
           </div>
+
           <div className="relative h-[296px] w-[257px] flex flex-col justify-center items-center">
             <div className="bg-white opacity-40 h-[296px] w-[257px] absolute rounded-3xl"></div>
             <Image
