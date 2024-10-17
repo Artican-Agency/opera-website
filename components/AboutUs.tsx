@@ -14,8 +14,8 @@ import WhyChooseUsImage from "../public/why-choose-us.png";
 export default function AboutUs() {
   return (
     <div className="flex justify-center items-center p-4 md:p-6 lg:p-8">
-      <div className="flex xl:flex-row flex-col gap-8 justify-between items-center">
-        <div className="space-y-6">
+      <div className="flex xl:flex-row flex-col  gap-8 justify-between items-center container">
+        <div className="space-y-12 flex flex-col h-full justify-between">
           <h1 className="text-3xl md:text-4xl font-bold text-[#2F2F2F]">
             Qui sommes nous ?
           </h1>

@@ -1,7 +1,4 @@
-Stack: MERN
-Functionality :
-- Accounts
-- Tasks , adding his own tasks (Can be deleted only his own tasks) ,Edit existing tasks, change status
-- Check in/out of participant
+Team Lead :
+Frontend: Akram Bedjaoui
 
-Roles to be
+Backend: Moncef geuzi
