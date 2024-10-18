@@ -21,7 +21,7 @@ function RelevantProducts() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <section className="bg-white flex flex-col justify-between md:items-start items-center h-full px-24 py-12">
+    <section className="bg-white flex flex-col justify-between md:items-start items-center h-full px-24 py-12 overflow-hidden">
       <h1 className="text-black font-sans font-bold text-5xl md:text-start text-center">
         Travail avec un excellent <span className="block">Produit.</span>
       </h1>
@@ -55,9 +55,7 @@ function RelevantProducts() {
               1024: {
                 slidesPerView: 3, // 3 slides for desktop
               },
-            }}
-            
-            >
+            }}>
             <SwiperSlide>
               <motion.div
                 whileHover={{ scale: 1.1 }}

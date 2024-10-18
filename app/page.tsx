@@ -7,7 +7,7 @@ import StatSection from "@/components/StatSection";
 
 export default function Home() {
   return (
-    <main className=" bg-white overflow-hidden">
+    <main className="bg-white">
       <BackgroundSlider />
       <StatSection />
       <RelevantProducts />
