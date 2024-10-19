@@ -128,3 +128,15 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 12px;
+  bottom: 12px;
+  left: 0;
+  text-align: center;
+  position: relative;
+}
+
+.announce .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}

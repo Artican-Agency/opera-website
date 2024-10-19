@@ -25,23 +25,22 @@ function RelevantProducts() {
       <h1 className="text-black font-sans font-bold text-5xl md:text-start text-center">
         Travail avec un excellent <span className="block">Produit.</span>
       </h1>
-      <div className="flex xl:flex-row flex-col justify-center items-start mt-2">
-        <p className="max-w-[300px] max-xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 md:text-start text-center">
+      <div className="flex lg:flex-row flex-col justify-between items-start mt-2">
+        <p className="max-w-[300px] min-w-[220px] max-lg:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 md:text-start text-center">
           Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
           vivethe as it was for us to know what was to be done.
         </p>
 
         <div className="flex justify-center items-center space-x-6 w-full">
           <Swiper
-            slidesPerView={3} // Default to 1 slide per view
+            slidesPerView={2} // Default to 1 slide per view
             centeredSlides={true}
             autoplay={{
               delay: 1500,
             }}
             loop={true}
-            pagination={{ clickable: true }}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
-            modules={[Navigation, Pagination, Autoplay]}
+            modules={[Navigation, Autoplay]}
             breakpoints={{
               // When the screen width is 640px or greater
               640: {

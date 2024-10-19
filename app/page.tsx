@@ -4,6 +4,7 @@ import BackgroundSlider from "@/components/BackgroundSlider";
 import BlogRecent from "@/components/BlogRecent";
 import RelevantProducts from "@/components/RelevantProducts";
 import StatSection from "@/components/StatSection";
+import Testimonial from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="flex flex-col justify-center items-center">
         <AboutUs />
         <AnnouncementSection />
+        <Testimonial />
       </div>
     </main>
   );
