@@ -17,28 +17,28 @@ function RelevantProducts() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <section className='bg-white flex flex-col justify-between md:items-start items-center h-full px-24 py-12 overflow-hidden'>
-      <h1 className='text-black font-sans font-bold text-5xl md:text-start text-center'>
+    <section className='bg-white flex flex-col justify-center md:items-center xl:items-start h-full px-24 py-12 overflow-hidden'>
+      <h1 className='text-black font-sans font-bold text-5xl xl:text-start text-center'>
         Travail avec un excellent <span className='block'>Produit.</span>
       </h1>
 
       <div className='flex'>
-        <div className='flex items-start mt-2'>
-          <div className='flex flex-col xl:py-6 mb-6 w-full'>
-            <p className='max-w-[300px] min-w-[220px] max-lg:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 md:text-start text-center'>
+        <div className='flex items-start justify-start mt-2'>
+          <div className='flex flex-col justify-center items-start xl:py-6 mb-6 w-full'>
+            <p className='max-w-[300px] min-w-[220px] max-xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 xl:text-start text-center'>
               Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
               vivethe as it was for us to know what was to be done.
             </p>
 
             <Button
               variant='default'
-              className='relative top-12 py-0 rounded-full w-[120px] text-xl px-8 hidden lg:block text-center'
+              className='relative top-12 py-0 rounded-full w-[120px] text-xl px-8 text-center xl:text-start max-xl:hidden'
             >
               Plus
             </Button>
           </div>
 
-          <div className='xl:hidden w-1/2'>
+          <div className='xl:hidden w-[800px]'>
             <Swiper
               slidesPerView={3}
               centeredSlides={true}
@@ -144,7 +144,7 @@ function RelevantProducts() {
           </div>
         </div>
 
-        <div className='w-1/2 max-xl:hidden'>
+        <div className='xl:w-1/2 lg:w-full max-xl:hidden'>
           <Swiper
             slidesPerView={3}
             centeredSlides={true}
