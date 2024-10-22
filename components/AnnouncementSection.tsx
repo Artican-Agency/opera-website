@@ -23,9 +23,9 @@ export default function AnnouncementSection() {
         <Swiper
           slidesPerView={1}
           centeredSlides={false}
-          // autoplay={{
-          //   delay: 1500,
-          // }}
+          autoplay={{
+            delay: 2500,
+          }}
           loop={true}
           className="mySwiper"
           pagination={true}
