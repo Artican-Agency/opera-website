@@ -140,3 +140,49 @@ body {
 .announce .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #ffffff;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #d4a300; /* Gold background color */
+  border-radius: 50%; /* Make the buttons round */
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important; /* Arrow color */
+  fill: white !important; /* Ensure the arrow is white */
+  stroke: white !important;
+  padding: 0; /* Remove padding */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add slight shadow */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+  padding: 0 0.5rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+.swiper-button-prev {
+  background-image: url(../public/Arrow.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-position: center;
+}
+
+.swiper-button-next {
+  background-image: url(/assets/icons/arrow-circle-right.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}

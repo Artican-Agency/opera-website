@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Card, CardContent } from "./ui/card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import 'swiper/css/navigation';
+
 
 export default function Testimonial() {
   return (
