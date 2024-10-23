@@ -2,6 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import AnnouncementSection from "@/components/AnnouncementSection";
 import BackgroundSlider from "@/components/BackgroundSlider";
 import BlogRecent from "@/components/BlogRecent";
+import PainterFinder from "@/components/PainterFinder";
 import RelevantProducts from "@/components/RelevantProducts";
 import StatSection from "@/components/StatSection";
 import Testimonial from "@/components/Testimonials";
@@ -18,6 +19,7 @@ export default function Home() {
         <AnnouncementSection />
         <Testimonial />
       </div>
+      <PainterFinder />
     </main>
   );
 }

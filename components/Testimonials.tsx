@@ -22,7 +22,7 @@ export default function Testimonial() {
           modules={[Navigation, Autoplay]}
         >
           <SwiperSlide className='flex flex-col justify-center items-center'>
-            <blockquote className='text-center mb-6 font-semibold'>
+            <blockquote className='text-center mb-6'>
               &quot;Donec nibh magna, interdum quis massa sed, rhoncus laoreet
               quam. Mauris accumsan felis fermentum euismod egestas. Mauris ante
               augue, cursus sit amet arcu a, maximus suscipit nibh. Integer vel
@@ -42,7 +42,7 @@ export default function Testimonial() {
             </div>
           </SwiperSlide>
           <SwiperSlide className='flex flex-col justify-center items-center'>
-            <blockquote className='text-center mb-6 font-semibold'>
+            <blockquote className='text-center mb-6'>
               &quot;Donec nibh magna, interdum quis massa sed, rhoncus laoreet
               quam. Mauris accumsan felis fermentum euismod egestas. Mauris ante
               augue, cursus sit amet arcu a, maximus suscipit nibh. Integer vel

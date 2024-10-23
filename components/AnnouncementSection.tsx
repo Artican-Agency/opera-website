@@ -56,7 +56,6 @@ export default function AnnouncementSection() {
           </SwiperSlide>
           <SwiperSlide>
             <div className="h-full w-full max-w-3xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
-              {/* Product Image */}
               <div className="mb-6">
                 <Image
                   src={lac}
@@ -67,7 +66,6 @@ export default function AnnouncementSection() {
                 />
               </div>
 
-              {/* Product Information */}
               <div className="text-white max-w-md text-center lg:text-left">
                 <h2 className="text-4xl font-bold mb-4">Etenche Plus</h2>
                 <p className="mb-6 text-sm lg:text-base">
