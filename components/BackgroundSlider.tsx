@@ -14,7 +14,7 @@ import { CircleHelp, Globe, Menu } from "lucide-react";
 export default function BackgroundSlider() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-[800px]">
-      <nav className="absolute top-0 z-50 flex items-center sm:justify-center justify-between w-full my-4">
+      <nav className="absolute top-0 z-50 flex items-center justify-center w-full my-4">
         <div className="flex justify-between items- md:w-2/3 w-11/12 space-x-6">
           <a href="/">
             <Image
