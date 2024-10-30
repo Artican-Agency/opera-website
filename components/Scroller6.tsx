@@ -1,0 +1,57 @@
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import Image from "next/image";
+import ScrollImage from "@/public/scroller_seven.png";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+const Scroller6 = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const races = document.querySelector(".races6") as HTMLElement;
+
+    if (!races) {
+      console.error("Races element not found");
+      return;
+    }
+
+    const tween = gsap.to(races, {
+      y: "-100",
+      duration: 3,
+      ease: "slow",
+    });
+
+    ScrollTrigger.create({
+      trigger: ".racesWrapper6",
+      endTrigger: ".next-section",
+      start: `top ${window.innerWidth > 1200 ? "50%" : "50%"}`,
+      end: () => `+=${-120}`,
+      pin: true,
+      animation: tween,
+      scrub: 1,
+      markers: false,
+    });
+
+    return () => {
+      tween.kill();
+      ScrollTrigger.getAll().forEach((st) => st.kill());
+    };
+  }, []);
+
+  return (
+    <div className="relative bottom-[340px] racesWrapper6">
+      <div className="flex flex-col items-center justify-center space-y-4 races6 xl:mx-56">
+        <Image
+          className="w-full max-w-[1220px] h-96 object-cover bg-center rounded-[2.5rem]"
+          ref={containerRef}
+          src={ScrollImage}
+          alt="Scroll image"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Scroller6;
