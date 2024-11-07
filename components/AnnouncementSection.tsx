@@ -5,8 +5,7 @@ import lac from "@/public/opera-lac.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
-import 'swiper/css/pagination';
-
+import "swiper/css/pagination";
 
 export default function AnnouncementSection() {
   return (
@@ -29,7 +28,7 @@ export default function AnnouncementSection() {
           loop={true}
           className="mySwiper"
           pagination={true}
-          modules={[Navigation, Autoplay,Pagination]}>
+          modules={[Navigation, Autoplay, Pagination]}>
           <SwiperSlide>
             <div className="h-full w-full max-w-3xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
               <div className="mb-6">
@@ -43,36 +42,14 @@ export default function AnnouncementSection() {
               </div>
 
               <div className="text-white max-w-md text-center lg:text-left">
-                <h2 className="text-4xl font-bold mb-4">Etenche Plus</h2>
-                <p className="mb-6 text-sm lg:text-base">
+                <h2 className="text-4xl font-bold mb-4 font-open">
+                  Etenche Plus
+                </h2>
+                <p className="mb-6 text-sm lg:text-base font-open">
                   Qeydiyyatli hesabdan birdefaye edilen her 10 AZN ve uzeri
                   Azersu odenisleri ucun, aninda 3-QAT
                 </p>
-                <button className="bg-[#2C2C2C] text-white font-sans p-2 px-4 rounded-lg font-medium mb-4">
-                  Details
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="h-full w-full max-w-3xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between">
-              <div className="mb-6">
-                <Image
-                  src={lac}
-                  alt="Etenche Plus paint bucket"
-                  width={200}
-                  height={200}
-                  className="rounded-lg"
-                />
-              </div>
-
-              <div className="text-white max-w-md text-center lg:text-left">
-                <h2 className="text-4xl font-bold mb-4">Etenche Plus</h2>
-                <p className="mb-6 text-sm lg:text-base">
-                  Qeydiyyatli hesabdan birdefaye edilen her 10 AZN ve uzeri
-                  Azersu odenisleri ucun, aninda 3-QAT
-                </p>
-                <button className="bg-[#2C2C2C] text-white font-sans p-2 px-4 rounded-lg font-medium mb-4">
+                <button className="bg-[#2C2C2C] text-white p-2 px-4 rounded-lg font-medium mb-4 font-open">
                   Details
                 </button>
               </div>

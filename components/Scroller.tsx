@@ -19,7 +19,7 @@ const Scroller = () => {
 
     const tween = gsap.to(races, {
       y: "-100",
-      duration: 3,
+      duration: 12,
       ease: "slow",
     });
 
@@ -44,7 +44,7 @@ const Scroller = () => {
     <div className="relative bottom-6 racesWrapper1">
       <div className="flex flex-col items-center justify-center space-y-4 races1 xl:mx-56">
         <Image
-          className="w-full max-w-4xl h-auto object-contain bg-center rounded-3xl"
+          className="w-full max-w-[756px] h-auto object-contain bg-center rounded-3xl"
           ref={containerRef}
           src={ScrollImage}
           alt="Scroll image"

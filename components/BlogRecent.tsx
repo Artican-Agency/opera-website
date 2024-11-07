@@ -21,7 +21,7 @@ function BlogRecent() {
         </h1>
 
         <a
-          className="xl:flex hidden justify-center items-center text-[#2F2F2F] font-sans text-sm font-semibold"
+          className="xl:flex hidden justify-center items-center text-[#2F2F2F] font-sans text-sm font-semibold font-open"
           href="">
           Plus de blogs
           <span>
@@ -37,7 +37,7 @@ function BlogRecent() {
             className="object-cover max-w-full h-72"
           />
 
-          <h2 className="font-sans font-normal py-4 text-sm text-[#2F2F2F]">
+          <h2 className="font-normal py-4 text-sm text-[#2F2F2F] font-open">
             First Time Home Owner Ideas <span className="block">by Opéra</span>
           </h2>
         </div>
@@ -48,7 +48,7 @@ function BlogRecent() {
             className="object-cover max-w-full h-72"
           />
 
-          <h2 className="font-sans font-normal py-4 text-sm text-[#2F2F2F]">
+          <h2 className="font-open font-normal py-4 text-sm text-[#2F2F2F]">
             First Time Home Owner Ideas <span className="block">by Opéra</span>
           </h2>
         </div>
@@ -59,7 +59,7 @@ function BlogRecent() {
             className="object-cover max-w-full h-72"
           />
 
-          <h2 className="font-sans font-normal py-4 text-sm text-[#2F2F2F]">
+          <h2 className="font-open font-normal py-4 text-sm text-[#2F2F2F]">
             First Time Home Owner Ideas <span className="block">by Opéra</span>
           </h2>
         </div>

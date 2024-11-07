@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ["PT Sans", "sans-serif"],
+        open: ["Open Sans", "sans-serif"],
       },
       colors: {
         background: "hsl(var(--background))",

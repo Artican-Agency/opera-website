@@ -2,6 +2,7 @@ import AboutUs from "@/components/AboutUs";
 import AnnouncementSection from "@/components/AnnouncementSection";
 import BackgroundSlider from "@/components/BackgroundSlider";
 import BlogRecent from "@/components/BlogRecent";
+import Footer from "@/components/Footer";
 import PainterFinder from "@/components/PainterFinder";
 import RelevantProducts from "@/components/RelevantProducts";
 import Scroller from "@/components/Scroller";
@@ -40,6 +41,8 @@ export default function Home() {
         <Testimonial />
       </div>
       <PainterFinder />
+
+      <Footer />
     </main>
   );
 }

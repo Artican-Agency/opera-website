@@ -11,15 +11,15 @@ function PainterFinder() {
           borderTopLeftRadius: "4rem",
           borderTopRightRadius: "4rem",
         }}>
-        <h2 className="text-4xl font-bold mb-2 text-white">
+        <h2 className="text-4xl font-bold mb-2 text-white font-open">
           Trouvez votre peintre
         </h2>
-        <p className="text-lg mb-4 text-white">
+        <p className="text-lg mb-4 text-white font-open">
           Votre peintre est disponible maintenant
         </p>
         <Link
           href="#"
-          className="inline-block bg-[#2C2C2C] bg-gradient-to-t text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors">
+          className="inline-block bg-[#2C2C2C] bg-gradient-to-t text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors font-open">
           Détails
         </Link>
       </div>
