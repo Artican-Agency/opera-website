@@ -36,16 +36,17 @@ function RelevantProducts() {
       </h1>
 
       <p className="min-w-[220px] xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 xl:text-start text-center mb-8">
-        Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
-        vivethe as it was for us to know what was to be done.
+        Offre des peintures de haute qualité, alliant innovation, durabilité et
+        respect de l'environnement, pour tous vos projets de peinture.{" "}
       </p>
 
       <div className="flex">
         <div className="flex items-start justify-start mt-2">
           <div className="flex flex-col justify-center items-start xl:py-6 mb-6 w-full">
             <p className="max-w-[300px] min-w-[220px] max-xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 xl:text-start text-center">
-              Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
-              vivethe as it was for us to know what was to be done.
+              Offre des peintures de haute qualité, alliant innovation,
+              durabilité et respect de l'environnement, pour tous vos projets de
+              peinture.
             </p>
 
             <Button
