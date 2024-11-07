@@ -4,6 +4,7 @@ import { Card, CardContent } from "./ui/card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Person from "./../public/person-1.png";
+import { User } from "lucide-react";
 
 export default function Testimonial() {
   return (
@@ -24,23 +25,54 @@ export default function Testimonial() {
           modules={[Navigation, Autoplay]}>
           <SwiperSlide className="flex flex-col justify-center items-center">
             <blockquote className="text-center mb-6 font-open">
-              &quot;Donec nibh magna, interdum quis massa sed, rhoncus laoreet
-              quam. Mauris accumsan felis fermentum euismod egestas. Mauris ante
-              augue, cursus sit amet arcu a, maximus suscipit nibh. Integer vel
-              nibh tellus. Pellentesque in risus non dui venenatis sollicitudin
-              sed vitae diam. Fusce tincidunt nisi mi, at molestie odio accumsan
-              non. Pellentesque ma&quot;
+              Depuis que j'utilise les produits d'Opéra Peintures, mes projets
+              de décoration ont pris une nouvelle dimension. La qualité
+              exceptionnelle des peintures, combinée à leur engagement pour la
+              durabilité et l'environnement, me donne confiance à chaque
+              application. Opéra Peintures est sans aucun doute le choix idéal
+              pour un travail de finition impeccable.
             </blockquote>
             <div className="flex flex-col items-center">
-              <Image
-                src={Person}
-                alt="Profile picture"
-                width={80}
-                height={80}
-                className="rounded-full mb-2"
-              />
+              <User className="w-8 h-8 text-muted-foreground mb-2" />
+
               <p className="text-sm text-muted-foreground font-open">
-                CEO of NATFAL
+                Nadir Bouzid
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex flex-col justify-center items-center">
+            <blockquote className="text-center mb-6 font-open">
+              Opéra Peintures offre une gamme de peintures de haute qualité qui
+              se distingue par son innovation et son respect des normes
+              environnementales. En tant que professionnel, j'apprécie leur
+              dévouement à fournir des produits performants et sûrs. La variété
+              de leurs couleurs et finitions me permet de répondre aux goûts les
+              plus exigeants de mes clients.
+            </blockquote>
+            <div className="flex flex-col items-center">
+              {/* Icon of user lucide react */}
+
+              <User className="w-8 h-8 text-muted-foreground mb-2" />
+
+              <p className="text-sm text-muted-foreground font-open">
+                Yasmina Cherif
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="flex flex-col justify-center items-center">
+            <blockquote className="text-center mb-6 font-open">
+              Je recommande vivement Opéra Peintures à quiconque cherche des
+              produits de peinture fiables et esthétiques. Leur équipe est
+              incroyablement serviable, et les démonstrations en boutique
+              facilitent grandement le choix des produits. L'attention portée
+              aux détails et aux préférences de leurs clients fait vraiment la
+              différence.
+            </blockquote>
+            <div className="flex flex-col items-center">
+              <User className="w-8 h-8 text-muted-foreground mb-2" />
+
+              <p className="text-sm text-muted-foreground font-open">
+                Karim Bensalem
               </p>
             </div>
           </SwiperSlide>

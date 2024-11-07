@@ -43,12 +43,14 @@ const Scroller = () => {
   return (
     <div className="relative racesWrapper1">
       <div className="flex flex-col items-center justify-center space-y-4 races1 xl:mx-56">
-        <Image
-          className="w-full max-w-[756px] h-56 object-contain bg-center lg:rounded-[2.5rem]"
-          ref={containerRef}
-          src={ScrollImage}
-          alt="Scroll image"
-        />
+        <div className="w-full max-w-[756px] h-56 overflow-hidden rounded-[2.5rem]">
+          <Image
+            className="w-full h-full object-cover bg-center"
+            ref={containerRef}
+            src={ScrollImage}
+            alt="Scroll image"
+          />
+        </div>
       </div>
     </div>
   );

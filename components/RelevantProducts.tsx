@@ -65,28 +65,126 @@ function RelevantProducts() {
               loop={true}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
               modules={[Navigation, Autoplay, Pagination]}>
-              {products.map((product, index) => (
-                <SwiperSlide key={product.id}>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                    <div
-                      className={`${
-                        activeIndex === index ? "bg-[#F9BF29]" : ""
-                      } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                    <Image
-                      className="relative z-40"
-                      src={product.src}
-                      width={174}
-                      height={183}
-                      alt={product.alt}
-                    />
-                    <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                      {product.name}
-                    </h2>
-                  </motion.div>
-                </SwiperSlide>
-              ))}
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[0].src}
+                    width={174}
+                    height={183}
+                    alt={products[0].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[0].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[1].src}
+                    width={174}
+                    height={183}
+                    alt={products[1].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[1].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[2].src}
+                    width={174}
+                    height={183}
+                    alt={products[2].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[2].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[3].src}
+                    width={174}
+                    height={183}
+                    alt={products[3].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[3].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[4].src}
+                    width={174}
+                    height={183}
+                    alt={products[4].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[4].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={products[5].src}
+                    width={174}
+                    height={183}
+                    alt={products[5].alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {products[5].name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
@@ -101,28 +199,112 @@ function RelevantProducts() {
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             modules={[Navigation, Autoplay, Pagination]}>
-            {products.map((product, index) => (
-              <SwiperSlide key={product.id}>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                  <div
-                    className={`${
-                      activeIndex === index ? "bg-[#F9BF29]" : ""
-                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                  <Image
-                    className="relative z-40"
-                    src={product.src}
-                    width={174}
-                    height={183}
-                    alt={product.alt}
-                  />
-                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {product.name}
-                  </h2>
-                </motion.div>
-              </SwiperSlide>
-            ))}
+            <SwiperSlide>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                <div
+                  className={`${
+                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                <Image
+                  className="relative z-40"
+                  src={products[0].src}
+                  width={174}
+                  height={183}
+                  alt={products[0].alt}
+                />
+                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                  {products[0].name}
+                </h2>
+              </motion.div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                <div
+                  className={`${
+                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                <Image
+                  className="relative z-40"
+                  src={products[1].src}
+                  width={174}
+                  height={183}
+                  alt={products[1].alt}
+                />
+                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                  {products[1].name}
+                </h2>
+              </motion.div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                <div
+                  className={`${
+                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                <Image
+                  className="relative z-40"
+                  src={products[2].src}
+                  width={174}
+                  height={183}
+                  alt={products[2].alt}
+                />
+                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                  {products[2].name}
+                </h2>
+              </motion.div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                <div
+                  className={`${
+                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                <Image
+                  className="relative z-40"
+                  src={products[3].src}
+                  width={174}
+                  height={183}
+                  alt={products[3].alt}
+                />
+                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                  {products[3].name}
+                </h2>
+              </motion.div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                <div
+                  className={`${
+                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
+                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                <Image
+                  className="relative z-40"
+                  src={products[4].src}
+                  width={174}
+                  height={183}
+                  alt={products[4].alt}
+                />
+                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                  {products[4].name}
+                </h2>
+              </motion.div>
+            </SwiperSlide>
+
+            {/* More than 4 will cause probleme in large screens*/}
           </Swiper>
         </div>
       </div>

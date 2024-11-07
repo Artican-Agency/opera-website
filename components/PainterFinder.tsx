@@ -18,7 +18,7 @@ function PainterFinder() {
           Votre peintre est disponible maintenant
         </p>
         <Link
-          href="#"
+          href="https://play.google.com/store/apps/details?id=com.chemsou00.allo_painter&hl=fr_CA"
           className="inline-block bg-[#2C2C2C] bg-gradient-to-t text-white px-8 py-3 rounded-full hover:bg-gray-800 transition-colors font-open">
           Détails
         </Link>
