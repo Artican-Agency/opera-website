@@ -1,9 +1,11 @@
 "use client";
 import { ArrowRight } from "lucide-react";
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import bgPhoto from "../public/bg-1.png";
 import bgPhoto2 from "../public/bg-2.png";
+import bgPhoto3 from "../public/post-1.png";
+import bgPhoto4 from "../public/post-2.png";
+
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,7 +23,7 @@ function BlogRecent() {
         </h1>
 
         <a
-          className="xl:flex hidden justify-center items-center text-[#2F2F2F] font-sans text-sm font-semibold font-open"
+          className="xl:flex hidden justify-center items-center text-[#2F2F2F] text-sm font-semibold font-open"
           href="">
           Plus de blogs
           <span>
@@ -29,6 +31,7 @@ function BlogRecent() {
           </span>
         </a>
       </div>
+
       <div className="2xl:flex hidden justify-center items-start p-12">
         <div className="flex flex-col items-start">
           <Image
@@ -54,7 +57,7 @@ function BlogRecent() {
         </div>
         <div className="flex flex-col items-start">
           <Image
-            src={bgPhoto}
+            src={bgPhoto3}
             alt="Photo"
             className="object-cover max-w-full h-72"
           />
@@ -75,10 +78,18 @@ function BlogRecent() {
           className="w-full h-full z-0 myswiper">
           <SwiperSlide>
             <Image
-              src={bgPhoto}
+              src={bgPhoto3}
               alt="Photo by Drew Beamer"
               fill
-              className="object-cover max-w-full h-auto"
+              className="object-cover max-w-full w-full h-auto"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image
+              src={bgPhoto4}
+              alt="Photo by Drew Beamer"
+              fill
+              className="object-center max-w-full h-auto"
             />
           </SwiperSlide>
           <SwiperSlide>

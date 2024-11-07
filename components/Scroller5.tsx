@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
-import ScrollImage from "@/public/scroller_five.png";
+import ScrollImage from "@/public/scroller_five.jpg";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -44,7 +44,7 @@ const Scroller5 = () => {
     <div className="relative bottom-72 racesWrapper5">
       <div className="flex flex-col items-center justify-center space-y-4 races5 xl:mx-56">
         <Image
-          className="w-full max-w-[1060px] h-64 object-contain bg-center"
+          className="w-full max-w-[1060px] h-56 object-cover bg-center lg:rounded-[2.5rem]"
           ref={containerRef}
           src={ScrollImage}
           alt="Scroll image"

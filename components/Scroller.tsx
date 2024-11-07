@@ -26,7 +26,7 @@ const Scroller = () => {
     ScrollTrigger.create({
       trigger: ".racesWrapper1",
       endTrigger: ".next-section",
-      start: `top ${window.innerWidth > 1200 ? "70%" : "70%"}`,
+      start: `top 60%`,
       end: () => `+=${-120}`,
       pin: true,
       animation: tween,
@@ -41,10 +41,10 @@ const Scroller = () => {
   }, []);
 
   return (
-    <div className="relative bottom-6 racesWrapper1">
+    <div className="relative racesWrapper1">
       <div className="flex flex-col items-center justify-center space-y-4 races1 xl:mx-56">
         <Image
-          className="w-full max-w-[756px] h-auto object-contain bg-center rounded-3xl"
+          className="w-full max-w-[756px] h-56 object-contain bg-center lg:rounded-[2.5rem]"
           ref={containerRef}
           src={ScrollImage}
           alt="Scroll image"

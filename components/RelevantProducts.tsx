@@ -1,9 +1,6 @@
 "use client";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import biton from "../public/opera-biton.png";
-import bait from "../public/opera-bait.png";
-import satine from "../public/opera-satine.png";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,6 +9,22 @@ import "swiper/css/pagination";
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { useState } from "react";
+
+import biton from "../public/opera-biton.png";
+import bait from "../public/opera-bait.png";
+import satine from "../public/Satine.png";
+import AntiBact from "../public/AntiBact.png";
+import Plafoni from "../public/Plafoni.png";
+import FixateurPlus from "../public/fixateur.png";
+
+const products = [
+  { id: 0, src: Plafoni, alt: "Plafoni", name: "Plafoni" },
+  { id: 1, src: biton, alt: "Béton Fix", name: "Béton Fix" },
+  { id: 2, src: bait, alt: "Opéra Mat", name: "Opéra Mat" },
+  { id: 3, src: satine, alt: "Satiné", name: "Satiné" },
+  { id: 4, src: AntiBact, alt: "Anti Bact", name: "Anti Bact" },
+  { id: 6, src: FixateurPlus, alt: "Fixateur Plus", name: "Fixateur Plus" },
+];
 
 function RelevantProducts() {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -52,89 +65,28 @@ function RelevantProducts() {
               loop={true}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
               modules={[Navigation, Autoplay, Pagination]}>
-              <SwiperSlide>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                  <div
-                    className={`${
-                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
-                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                  <Image
-                    className="relative z-40"
-                    src={biton}
-                    width={174}
-                    height={183}
-                    alt="Béton Fix"
-                  />
-                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    Béton Fix
-                  </h2>
-                </motion.div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                  <div
-                    className={`${
-                      activeIndex === 0 ? "bg-[#F9BF29]" : ""
-                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                  <Image
-                    className="relative z-40"
-                    src={biton}
-                    width={174}
-                    height={183}
-                    alt="Béton Fix"
-                  />
-                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    Béton Fix
-                  </h2>
-                </motion.div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                  <div
-                    className={`${
-                      activeIndex === 1 ? "bg-[#F9BF29]" : ""
-                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                  <Image
-                    className="relative z-40"
-                    src={bait}
-                    width={174}
-                    height={183}
-                    alt="Opéra Mat"
-                  />
-                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    Opéra Mat
-                  </h2>
-                </motion.div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <motion.div
-                  whileHover={{ scale: 1.1 }}
-                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                  <div
-                    className={`${
-                      activeIndex === 2 ? "bg-[#F9BF29]" : ""
-                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                  <Image
-                    className="relative z-40 w-[142px] h-[160px]"
-                    src={satine}
-                    width={174}
-                    height={183}
-                    alt="Satiné"
-                  />
-                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    Satiné
-                  </h2>
-                </motion.div>
-              </SwiperSlide>
+              {products.map((product, index) => (
+                <SwiperSlide key={product.id}>
+                  <motion.div
+                    whileHover={{ scale: 1.1 }}
+                    className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                    <div
+                      className={`${
+                        activeIndex === index ? "bg-[#F9BF29]" : ""
+                      } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                    <Image
+                      className="relative z-40"
+                      src={product.src}
+                      width={174}
+                      height={183}
+                      alt={product.alt}
+                    />
+                    <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                      {product.name}
+                    </h2>
+                  </motion.div>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
@@ -149,110 +101,28 @@ function RelevantProducts() {
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
             modules={[Navigation, Autoplay, Pagination]}>
-            <SwiperSlide>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                <div
-                  className={`${
-                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
-                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                <Image
-                  className="relative z-40"
-                  src={biton}
-                  width={174}
-                  height={183}
-                  alt="Béton Fix"
-                />
-                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  Béton Fix
-                </h2>
-              </motion.div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                <div
-                  className={`${
-                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
-                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                <Image
-                  className="relative z-40"
-                  src={biton}
-                  width={174}
-                  height={183}
-                  alt="Béton Fix"
-                />
-                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  Béton Fix
-                </h2>
-              </motion.div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                <div
-                  className={`${
-                    activeIndex === 0 ? "bg-[#F9BF29]" : ""
-                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                <Image
-                  className="relative z-40"
-                  src={biton}
-                  width={174}
-                  height={183}
-                  alt="Béton Fix"
-                />
-                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  Béton Fix
-                </h2>
-              </motion.div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                <div
-                  className={`${
-                    activeIndex === 1 ? "bg-[#F9BF29]" : ""
-                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                <Image
-                  className="relative z-40"
-                  src={bait}
-                  width={174}
-                  height={183}
-                  alt="Opéra Mat"
-                />
-                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  Opéra Mat
-                </h2>
-              </motion.div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <motion.div
-                whileHover={{ scale: 1.1 }}
-                className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
-                <div
-                  className={`${
-                    activeIndex === 2 ? "bg-[#F9BF29]" : ""
-                  } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
-                <Image
-                  className="relative z-40 w-[142px] h-[160px]"
-                  src={satine}
-                  width={174}
-                  height={183}
-                  alt="Satiné"
-                />
-                <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  Satiné
-                </h2>
-              </motion.div>
-            </SwiperSlide>
+            {products.map((product, index) => (
+              <SwiperSlide key={product.id}>
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="relative h-[296px] w-[257px] flex flex-col justify-center items-center cursor-pointer">
+                  <div
+                    className={`${
+                      activeIndex === index ? "bg-[#F9BF29]" : ""
+                    } opacity-40 h-[296px] w-[257px] absolute rounded-3xl transition-colors duration-300`}></div>
+                  <Image
+                    className="relative z-40"
+                    src={product.src}
+                    width={174}
+                    height={183}
+                    alt={product.alt}
+                  />
+                  <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
+                    {product.name}
+                  </h2>
+                </motion.div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

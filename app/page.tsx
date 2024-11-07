@@ -20,7 +20,7 @@ export default function Home() {
       <BackgroundSlider />
       <StatSection />
       <RelevantProducts />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-24">
         <h1 className="text-black font-sans font-bold text-5xl xl:text-start text-center mb-12">
           Nos Avantages
         </h1>

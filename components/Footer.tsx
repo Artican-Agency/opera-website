@@ -26,40 +26,16 @@ export default function Footer() {
             </p>
             <div className="mt-6 flex space-x-4">
               <Link href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="/facebook.svg"
-                  alt="Opera Logo"
-                  width={150}
-                  height={80}
-                  className="h-12 w-auto"
-                />
+                <Facebook className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="/facebook.svg"
-                  alt="Opera Logo"
-                  width={150}
-                  height={80}
-                  className="h-12 w-auto"
-                />
+                <Instagram className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="/facebook.svg"
-                  alt="Opera Logo"
-                  width={150}
-                  height={80}
-                  className="h-12 w-auto"
-                />
+                <Twitter className="h-5 w-5" />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white">
-                <Image
-                  src="/facebook.svg"
-                  alt="Opera Logo"
-                  width={150}
-                  height={80}
-                  className="h-12 w-auto"
-                />
+                <Linkedin className="h-5 w-5" />
               </Link>
             </div>
           </div>
@@ -98,7 +74,7 @@ export default function Footer() {
         <div className="mt-12 flex flex-wrap gap-4">
           <Link href="#" className="h-10">
             <Image
-              src="/placeholder.svg"
+              src="/googleplay.svg"
               alt="Get it on Google Play"
               width={140}
               height={40}
@@ -107,17 +83,8 @@ export default function Footer() {
           </Link>
           <Link href="#" className="h-10">
             <Image
-              src="/placeholder.svg"
+              src="/apple.svg"
               alt="Download on the App Store"
-              width={140}
-              height={40}
-              className="h-full w-auto"
-            />
-          </Link>
-          <Link href="#" className="h-10">
-            <Image
-              src="/placeholder.svg"
-              alt="Get it on AppGallery"
               width={140}
               height={40}
               className="h-full w-auto"
@@ -150,11 +117,10 @@ export default function Footer() {
 
         <div className="mt-12">
           <Image
-            src="/placeholder.svg"
+            src="/logo-opera.svg"
             alt="Secondary Logo"
-            width={100}
-            height={40}
-            className="h-8 w-auto"
+            width={56}
+            height={56}
           />
         </div>
 
