@@ -24,7 +24,7 @@ export default function Home() {
         <h1 className="text-black font-sans font-bold text-5xl xl:text-start text-center mb-12">
           Nos Avantages
         </h1>
-        <div className="relative top-36">
+        <div className="relative top-36 max-xl:hidden">
           <Scroller />
           <Scroller2 />
           <Scroller3 />
