@@ -9,16 +9,6 @@ import Image from "next/image";
 
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { ChevronDown, CircleHelp, Globe, Menu } from "lucide-react";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "./ui/Navigation";
-import Link from "next/link";
 import Navbar from "./Navbar";
 
 export default function BackgroundSlider() {
