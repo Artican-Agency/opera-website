@@ -21,10 +21,10 @@ export default function Home() {
       <StatSection />
       <RelevantProducts />
       <div className="flex flex-col justify-center items-center mt-24">
-        <h1 className="max-xl:hidden text-black font-sans font-bold text-5xl xl:text-start text-center mb-12">
+        <h1 className=" text-black font-sans font-bold text-5xl xl:text-start text-center mb-12">
           Nos Avantages
         </h1>
-        <div className="relative top-36 max-xl:hidden">
+        <div className="relative top-36">
           <Scroller />
           <Scroller2 />
           <Scroller3 />
