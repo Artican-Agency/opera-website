@@ -1,23 +1,25 @@
-'use client';
+"use client";
 
-import { SwiperSlide, Swiper } from 'swiper/react';
-import bgPhoto from '../../public/colors.png';
+import { SwiperSlide, Swiper } from "swiper/react";
+import bgPhoto from "../../public/colors.png";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
+import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
-import Navbar from '@/components/Navbar';
-import { ChevronRight } from 'lucide-react';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
-import { instance } from '@/instance';
-import ProductCard from '@/components/ProductCard';
+import Navbar from "@/components/Navbar";
+import { ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { instance } from "@/instance";
+import ProductCard from "@/components/ProductCard";
+import Footer from "@/components/Footer";
+import PainterFinder from "@/components/PainterFinder";
 
 function HeroSection() {
   return (
-    <div className='flex flex-col justify-center items-center w-full h-[500px] text-white'>
+    <div className="flex flex-col justify-center items-center w-full h-[500px] text-white">
       <Navbar />
 
       <Swiper
@@ -27,21 +29,20 @@ function HeroSection() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className='w-full h-full z-0 myswiper'
-      >
+        className="w-full h-full z-0 myswiper">
         <SwiperSlide>
           <Image
             src={bgPhoto}
-            alt='Photo by Drew Beamer'
+            alt="Photo by Drew Beamer"
             fill
-            className='object-cover max-w-full h-auto'
+            className="object-cover max-w-full h-auto"
           />
         </SwiperSlide>
       </Swiper>
 
-      <div className='absolute inset-1/5 z-20 flex items-center justify-center xl:w-2/3 m-4 flex-col'>
-        <h1 className='text-5xl font-semibold'>Produits</h1>
-        <h3 className='flex justify-center items-center relative top-12 text-md'>
+      <div className="absolute inset-1/5 z-20 flex items-center justify-center xl:w-2/3 m-4 flex-col">
+        <h1 className="text-5xl font-semibold">Produits</h1>
+        <h3 className="flex justify-center items-center relative top-12 text-md">
           Acceuil <ChevronRight height={18} width={18} />
           Produit
         </h3>
@@ -63,7 +64,7 @@ export default function Home() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await instance.get('/product/all');
+        const { data } = await instance.get("/product/all");
         setProducts(data.data);
       } catch (error) {
         console.error(error);
@@ -73,16 +74,28 @@ export default function Home() {
     fetchProducts();
   }, []);
   return (
-    <main className='bg-white'>
+    <main className="bg-white h-full overflow-y-hidden">
       <HeroSection />
 
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white h-full">
         {products &&
           products.length > 1 &&
-          products.map(product => (
+          products.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
+
+        {!products.length && (
+          <div className="flex justify-center items-center h-full">
+            <h1 className="text-2xl">Loading...</h1>
+          </div>
+        )}
       </div>
+
+      <div className="mt-52">
+        <PainterFinder />
+      </div>
+
+      <Footer />
     </main>
   );
 }

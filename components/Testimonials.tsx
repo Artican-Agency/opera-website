@@ -8,8 +8,8 @@ import { User } from "lucide-react";
 
 export default function Testimonial() {
   return (
-    <Card className="w-full max-w-6xl mx-auto my-12">
-      <CardContent className="p-6">
+    <Card className="w-full max-w-6xl mx-auto my-12 relative z-0">
+      <CardContent className="p-6 z-0">
         <h2 className="text-3xl font-bold text-center mb-6 font-open">
           Témoignages
         </h2>
@@ -23,8 +23,8 @@ export default function Testimonial() {
           }}
           loop={true}
           modules={[Navigation, Autoplay]}>
-          <SwiperSlide className="flex flex-col justify-center items-center">
-            <blockquote className="text-center mb-6 font-open">
+          <SwiperSlide className="flex flex-col justify-center items-center z-0">
+            <blockquote className="text-center mb-6 font-open z-0">
               Depuis que j'utilise les produits d'Opéra Peintures, mes projets
               de décoration ont pris une nouvelle dimension. La qualité
               exceptionnelle des peintures, combinée à leur engagement pour la
@@ -40,8 +40,8 @@ export default function Testimonial() {
               </p>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="flex flex-col justify-center items-center">
-            <blockquote className="text-center mb-6 font-open">
+          <SwiperSlide className="flex flex-col justify-center items-center z-0">
+            <blockquote className="text-center mb-6 font-open z-0">
               Opéra Peintures offre une gamme de peintures de haute qualité qui
               se distingue par son innovation et son respect des normes
               environnementales. En tant que professionnel, j'apprécie leur
@@ -59,8 +59,8 @@ export default function Testimonial() {
               </p>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="flex flex-col justify-center items-center">
-            <blockquote className="text-center mb-6 font-open">
+          <SwiperSlide className="flex flex-col justify-center items-center z-0">
+            <blockquote className="text-center mb-6 font-open z-0">
               Je recommande vivement Opéra Peintures à quiconque cherche des
               produits de peinture fiables et esthétiques. Leur équipe est
               incroyablement serviable, et les démonstrations en boutique

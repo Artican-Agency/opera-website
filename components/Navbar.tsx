@@ -11,7 +11,6 @@ import {
 } from "./ui/Navigation";
 import Link from "next/link";
 import { Dialog, DialogClose, DialogContent, DialogTrigger } from "./ui/dialog";
-import { Close } from "@radix-ui/react-dialog";
 
 export default function Navbar({ className }: { className?: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

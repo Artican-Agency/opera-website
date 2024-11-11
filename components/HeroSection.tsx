@@ -5,11 +5,11 @@ import Logo from "../public/logo-opera.svg";
 
 function HeroSection() {
   return (
-    <div className="flex flex-col justify-start items-start">
+    <div className="flex flex-col justify-start items-start font-open">
       <h1 className="md:text-5xl text-4xl font-bold flex flex-col justify-start items-center font-sans text-white">
         Exprimez votre style avec{" "}
       </h1>
-      <h2 className="flex justify-center items-center md:text-5xl text-4xl font-bold font-sans relative bottom-6 text-white">
+      <h2 className="flex justify-start items-center md:text-5xl text-4xl font-bold font-sans relative bottom-6 text-white">
         <Image
           src={Logo}
           height={191}
