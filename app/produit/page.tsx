@@ -77,7 +77,7 @@ export default function Home() {
     <main className="bg-white h-full overflow-y-hidden">
       <HeroSection />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white h-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white h-full py-12">
         {products &&
           products.length > 1 &&
           products.map((product) => (
