@@ -13,7 +13,7 @@ export default function vProductCard({
   };
 }) {
   return (
-    <Card className="bg-gray-100 w-[280px] h-[380px] shadow-md rounded-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-lg">
+    <Card className="bg-gray-100">
       <CardContent className="p-4 flex flex-col justify-center items-center">
         <div className="relative w-40 h-40 mb-4 rounded-lg overflow-hidden">
           <Image
@@ -28,7 +28,7 @@ export default function vProductCard({
           {product.title}
         </h2>
       </CardContent>
-      <CardFooter className="flex justify-center mb-4">
+      <CardFooter className="flex justify-center">
         <a
           href={product.product_pdf}
           download
