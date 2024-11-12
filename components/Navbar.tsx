@@ -76,7 +76,7 @@ export default function Navbar({ className }: { className?: string }) {
               <a href="/">Acceuil</a>
             </li>
             <li className="font-sans">
-              <a href="#Qui" className="whitespace-nowrap">
+              <a href="/#Qui" className="whitespace-nowrap">
                 Qui sommes nous
               </a>
             </li>
@@ -117,10 +117,10 @@ export default function Navbar({ className }: { className?: string }) {
               </NavigationMenuList>
             </NavigationMenu>
             <li className="font-sans">
-              <a href="#Blogs">Blog&Vidéos</a>
+              <a href="/blogs">Blog&Vidéos</a>
             </li>
             <li className="font-sans">
-              <a href="#Contact">Contact</a>
+              <a href="/Contact">Contact</a>
             </li>
           </ul>
           <div className="flex justify-center space-x-2 items-center">
@@ -140,7 +140,7 @@ export default function Navbar({ className }: { className?: string }) {
               <a href="/">Acceuil</a>
             </li>
             <li className="font-sans">
-              <a href="#Qui" className="whitespace-nowrap">
+              <a href="/#Qui" className="whitespace-nowrap">
                 Qui sommes nous
               </a>
             </li>
