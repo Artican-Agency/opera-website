@@ -84,7 +84,7 @@ export default function Page() {
           products.map((product) => (
             <div
               key={product._id}
-              className="w-64 h-80 bg-white shadow-lg rounded-lg overflow-hidden">
+              className="w-64 max-h-[310px] bg-white shadow-lg rounded-lg overflow-hidden">
               <ProductCard product={product} />
             </div>
           ))
