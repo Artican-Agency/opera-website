@@ -192,7 +192,7 @@ export default function Navbar({ className }: { className?: string }) {
               </NavigationMenuList>
             </NavigationMenu>
             <li className='font-sans'>
-              <a href='#Blogs'>Blog&Vidéos</a>
+              <a href='/blogs'>Blog&Vidéos</a>
             </li>
             <li className='font-sans'>
               <a href='#Contact'>Contact</a>

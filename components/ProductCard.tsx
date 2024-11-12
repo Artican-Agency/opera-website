@@ -24,7 +24,7 @@ export default function vProductCard({
             className="rounded-lg"
           />
         </div>
-        <h2 className="text-lg font-semibold text-center text-[#2F2F2F] mb-2 font-open">
+        <h2 className="text-lg font-semibold font-light text-center text-[#2F2F2F] mb-2 font-open">
           {product.title}
         </h2>
       </CardContent>
@@ -32,7 +32,7 @@ export default function vProductCard({
         <a
           href={product.product_pdf}
           download
-          className="font-open bg-primary-ui text-white text-sm font-semibold px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">
+          className="font-open bg-primary-ui text-[#171515] text-sm font-semibold px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">
           Téléchargez le catalogue
         </a>
       </CardFooter>
