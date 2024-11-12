@@ -1,7 +1,7 @@
 "use client";
 
 import { SwiperSlide, Swiper } from "swiper/react";
-import bgPhoto from "../../public/colors.png";
+import bgPhoto from "../../../public/colors.png";
 
 import Image from "next/image";
 
@@ -11,11 +11,11 @@ import { Autoplay } from "swiper/modules";
 import Navbar from "@/components/Navbar";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import { instance } from "@/instance";
 import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
 import PainterFinder from "@/components/PainterFinder";
+import { useParams } from "next/navigation";
 
 function HeroSection() {
   return (
@@ -58,13 +58,15 @@ interface Product {
   product_pdf: string;
 }
 
-export default function Home() {
+export default function Page() {
+  const { category } = useParams() ?? {};
+
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await instance.get("/product/all");
+        const { data } = await instance.get(`/product/${category}`);
         setProducts(data.data);
       } catch (error) {
         console.error(error);
@@ -72,20 +74,22 @@ export default function Home() {
     };
 
     fetchProducts();
-  }, []);
+  }, [category]);
   return (
-    <main className="bg-white h-full overflow-y-hidden">
+    <main className="bg-white h-full overflow-y-hidden w-full">
       <HeroSection />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white h-full py-12">
-        {products &&
-          products.length > 1 &&
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-center bg-white py-12 w-full mx-auto">
+        {products && products.length > 1 ? (
           products.map((product) => (
-            <ProductCard key={product._id} product={product} />
-          ))}
-
-        {!products.length && (
-          <div className="flex justify-center items-center h-full">
+            <div
+              key={product._id}
+              className="w-64 h-80 bg-white shadow-lg rounded-lg overflow-hidden">
+              <ProductCard product={product} />
+            </div>
+          ))
+        ) : (
+          <div className="flex justify-center items-center h-full w-full col-span-full">
             <h1 className="text-2xl">Loading...</h1>
           </div>
         )}

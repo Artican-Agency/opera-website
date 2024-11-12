@@ -92,21 +92,21 @@ export default function Navbar({ className }: { className?: string }) {
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/enduits">
                             Enduits
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/decors">
                             Décors
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/batiments">
                             Batiments
                           </Link>
                         </NavigationMenuLink>
@@ -156,21 +156,21 @@ export default function Navbar({ className }: { className?: string }) {
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/enduits">
                             Enduits
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/decors">
                             Décors
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
-                            href="#">
+                            href="/produit/batiments">
                             Batiments
                           </Link>
                         </NavigationMenuLink>
