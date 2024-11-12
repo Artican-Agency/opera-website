@@ -125,7 +125,7 @@ export default function Footer() {
         </div> */}
 
         <div className='mt-8 flex flex-wrap items-center justify-between border-t border-gray-800 pt-8 text-sm text-gray-400'>
-          <p>Copyright 2024 Artlean Agency. All Rights Reserved.</p>
+          <p>Copyright 2024 Artican Agency. All Rights Reserved.</p>
           <div className='flex gap-4'>
             <Link href='#' className='hover:text-white'>
               Terms & Conditions
