@@ -20,7 +20,7 @@ export default function Navbar({ className }: { className?: string }) {
   return (
     <nav
       className={`absolute top-0 z-50 flex items-center justify-center w-full mb-4 text-white ${className}`}>
-      <div className="flex flex-col justify-between items-center w-full relative z-50">
+      <div className="flex xl:mx-12 lg:mx-2 justify-between items-center w-full relative z-50">
         <div className="flex justify-between items-center w-full px-4 sm:px-6 lg:px-0">
           <a href="/">
             <Image
