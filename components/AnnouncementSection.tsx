@@ -44,7 +44,7 @@ export default function AnnouncementSection() {
 
               <div className='text-white max-w-md text-center lg:text-left'>
                 <h2 className='text-4xl font-bold mb-4 font-open'>
-                  Laque - La finition idéale
+                  Laque
                 </h2>
                 <p className='mb-6 text-sm lg:text-base font-open'>
                   Pour des murs éclatants et durables, choisissez Laque pour une
