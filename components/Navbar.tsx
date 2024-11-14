@@ -11,6 +11,7 @@ import {
 } from "./ui/Navigation";
 import Link from "next/link";
 import { Dialog, DialogClose, DialogContent, DialogTrigger } from "./ui/dialog";
+import { motion } from "motion/react";
 
 export default function Navbar({ className }: { className?: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +23,11 @@ export default function Navbar({ className }: { className?: string }) {
       className={`absolute top-0 z-50 flex items-center justify-center w-full mb-4 text-white ${className}`}>
       <div className="flex xl:mx-12 lg:mx-2 justify-between items-center w-full relative z-50">
         <div className="flex justify-between items-center w-full px-4 sm:px-6 lg:px-0">
-          <a href="/">
+          <motion.a
+            whileHover={{
+              scale: 1.2,
+            }}
+            href="/">
             <Image
               src="/logo-opera.svg"
               alt="Logo"
@@ -30,7 +35,7 @@ export default function Navbar({ className }: { className?: string }) {
               height={120}
               className="object-contain"
             />
-          </a>
+          </motion.a>
 
           {/* Responsive Controls */}
           <div className="flex justify-center items-center space-x-4 xl:hidden">
@@ -71,14 +76,24 @@ export default function Navbar({ className }: { className?: string }) {
           </button>
           <ul className="flex flex-col items-center space-y-8">
             <li className="font-sans">
-              <a className="text-white" href="/">
+              <motion.a
+                whileHover={{
+                  scale: 1.2,
+                }}
+                className="text-white"
+                href="/">
                 Accueil
-              </a>
+              </motion.a>
             </li>
             <li className="font-sans">
-              <a href="/#Qui" className="whitespace-nowrap text-white">
+              <motion.a
+                whileHover={{
+                  scale: 1.2,
+                }}
+                href="/#Qui"
+                className="whitespace-nowrap text-white">
                 Qui sommes-nous
-              </a>
+              </motion.a>
             </li>
             <NavigationMenu>
               <NavigationMenuList>

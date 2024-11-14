@@ -18,8 +18,10 @@ import PainterFinder from "@/components/PainterFinder";
 import { useParams } from "next/navigation";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import { capitalizeFirstLetter } from "@/lib/utils";
 
 function HeroSection() {
+  const { category } = useParams() ?? {};
   return (
     <div className="flex flex-col justify-center items-center w-full h-[500px] text-white">
       <Navbar />
@@ -47,17 +49,12 @@ function HeroSection() {
         <h3 className="flex justify-center items-center relative top-12 text-md">
           <a href="/">Acceuil</a> <ChevronRight height={18} width={18} />
           Produit
+          <ChevronRight height={18} width={18} />
+          {typeof category === "string" ? capitalizeFirstLetter(category) : ""}
         </h3>
       </div>
     </div>
   );
-}
-
-interface Product {
-  _id: string;
-  title: string;
-  product_img: string;
-  product_pdf: string;
 }
 
 export default function Page() {
