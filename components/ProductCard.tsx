@@ -24,7 +24,7 @@ export default function vProductCard({
             className="rounded-lg"
           />
         </div>
-        <h2 className="text-lg font-semibold font-light text-center text-[#2F2F2F] mb-2 font-open">
+        <h2 className="text-lg font-semibold text-center text-[#2F2F2F] mb-2 font-open">
           {product.title}
         </h2>
       </CardContent>
