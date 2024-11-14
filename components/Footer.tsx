@@ -50,7 +50,7 @@ export default function Footer() {
             <Link href='#' className='text-gray-300 hover:text-white'>
               Qui sommes nous
             </Link>
-            <Link href='/produit/' className='text-gray-300 hover:text-white'>
+            <Link href='/produit/batiments' className='text-gray-300 hover:text-white'>
               Produits
             </Link>
             <Link href='#' className='text-gray-300 hover:text-white'>

@@ -43,7 +43,7 @@ function HeroSection() {
       <div className="absolute inset-1/5 z-20 flex items-center justify-center xl:w-2/3 m-4 flex-col">
         <h1 className="text-5xl font-semibold">Produits</h1>
         <h3 className="flex justify-center items-center relative top-12 text-md">
-          Acceuil <ChevronRight height={18} width={18} />
+          <a href="/">Acceuil</a> <ChevronRight height={18} width={18} />
           Produit
         </h3>
       </div>
