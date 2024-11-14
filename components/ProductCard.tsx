@@ -32,7 +32,7 @@ export default function vProductCard({
         <a
           href={product.product_pdf}
           download
-          className="font-open bg-primary-ui text-[#171515] text-sm font-semibold px-5 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+          className="font-open bg-primary-ui hover:bg-[#d8a72a] text-[#171515] text-sm font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300">
           Téléchargez le catalogue
         </a>
       </CardFooter>

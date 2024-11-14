@@ -16,6 +16,8 @@ import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
 import PainterFinder from "@/components/PainterFinder";
 import { useParams } from "next/navigation";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function HeroSection() {
   return (
@@ -81,28 +83,43 @@ export default function Page() {
   return (
     <main className="bg-white h-full overflow-y-hidden w-full">
       <HeroSection />
+      <ProductGrid products={products} />
+      <div className="mt-52">
+        <PainterFinder />
+      </div>
+      <Footer />
+    </main>
+  );
+}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-center bg-white py-12 w-full mx-auto">
-        {products && products.length > 0 ? (
-          products.map((product) => (
+const LoadingSkeleton = () => (
+  <Card className="bg-white w-full h-100 flex flex-col justify-between shadow-xl rounded-xl border border-gray-200">
+    <CardContent className="p-6 flex flex-col items-center">
+      <Skeleton className="w-full h-32 mb-6 rounded-md" />
+      <Skeleton className="h-6 w-3/4 mb-4 rounded-md" />
+    </CardContent>
+    <CardFooter className="flex justify-center pb-6">
+      <Skeleton className="h-10 w-3/4 rounded-full" />
+    </CardFooter>
+  </Card>
+);
+
+function ProductGrid({ products }: { products: any[] }) {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-center bg-white py-12 w-full mx-auto">
+      {products && products.length > 0
+        ? products.map((product) => (
             <div
               key={product._id}
               className="w-64 max-h-[310px] bg-white shadow-lg rounded-lg overflow-hidden">
               <ProductCard product={product} />
             </div>
           ))
-        ) : (
-          <div className="flex justify-center items-center h-full w-full col-span-full">
-            <h1 className="text-2xl">Loading...</h1>
-          </div>
-        )}
-      </div>
-
-      <div className="mt-52">
-        <PainterFinder />
-      </div>
-
-      <Footer />
-    </main>
+        : Array.from({ length: 6 }).map((_, index) => (
+            <div key={index} className="w-64 max-h-[310px]">
+              <LoadingSkeleton />
+            </div>
+          ))}
+    </div>
   );
 }
