@@ -13,26 +13,26 @@ export default function vProductCard({
   };
 }) {
   return (
-    <Card className="bg-gray-100">
-      <CardContent className="p-4 flex flex-col justify-center items-center">
-        <div className="relative w-40 h-40 mb-4 rounded-lg overflow-hidden">
+    <Card className="bg-white w-full h-100 flex flex-col justify-between shadow-xl rounded-xl border border-gray-200">
+      <CardContent className="p-6 flex flex-col items-center">
+        <div className="relative w-full h-32 mb-6 rounded-md overflow-hidden flex items-center justify-center">
           <Image
             src={product.product_img || "/placeholder-image.jpg"}
             alt={product.title}
             layout="fill"
-            objectFit="cover"
-            className="rounded-lg"
+            objectFit="contain"
+            className="rounded-md"
           />
         </div>
-        <h2 className="text-lg font-semibold text-center text-[#2F2F2F] mb-2 font-open">
+        <h2 className="text-base font-semibold text-center text-gray-800 mb-4 font-open">
           {product.title}
         </h2>
       </CardContent>
-      <CardFooter className="flex justify-center">
+      <CardFooter className="flex justify-center pb-6">
         <a
           href={product.product_pdf}
           download
-          className="font-open bg-primary-ui text-[#171515] text-sm font-semibold px-4 py-2 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">
+          className="font-open bg-primary-ui text-[#171515] text-sm font-semibold px-5 py-3 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
           Téléchargez le catalogue
         </a>
       </CardFooter>
