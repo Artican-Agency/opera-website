@@ -61,13 +61,16 @@ interface Product {
 export default function Page() {
   const { category } = useParams() ?? {};
 
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<any[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
       try {
         const { data } = await instance.get(`/product/${category}`);
+        if (data.data.length === 0) return;
+
         setProducts(data.data);
+        console.log("🚀 ~ fetchProducts ~ data:", data.data);
       } catch (error) {
         console.error(error);
       }
@@ -80,7 +83,7 @@ export default function Page() {
       <HeroSection />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-center bg-white py-12 w-full mx-auto">
-        {products && products.length > 1 ? (
+        {products && products.length > 0 ? (
           products.map((product) => (
             <div
               key={product._id}
