@@ -67,7 +67,7 @@ export default function AnnouncementSection() {
                     />
                   </div>
 
-                  <div className="text-white max-w-md text-center lg:text-left ml-12">
+                  <div className="text-white max-w-md text-center lg:text-left lg:ml-12">
                     <h2 className="text-4xl font-bold mb-4 font-open">
                       {announce.title}
                     </h2>
@@ -89,13 +89,13 @@ export default function AnnouncementSection() {
     );
   else
     return (
-      <div className="announce relative lg:h-[296px] h-full overflow-hidden w-2/3 rounded-2xl m-6 p-12 mx-12">
+      <div className="announce relative lg:h-[296px] h-full overflow-hidden w-2/3 rounded-2xl m-6 p-6">
         <div className="absolute inset-0 bg-gray-400/30 z-0" />
-        <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center bg-yellow-100/30 z-10">
+        <div className="h-full w-full flex flex-col lg:flex-row items-center justify-center bg-gray-100/30 z-10">
           <div className="mb-6">
             <Skeleton className="w-[250px] h-[170px] rounded-lg" />
           </div>
-          <div className="text-white max-w-md text-center lg:text-left ml-12">
+          <div className="text-white flex flex-col justify-center items-center   max-w-md text-center lg:text-left lg:ml-12">
             <Skeleton className="h-8 w-3/4 rounded-md mb-4" />
             <Skeleton className="h-4 w-full rounded-md mb-6" />
             <Skeleton className="h-4 w-5/6 rounded-md mb-6" />

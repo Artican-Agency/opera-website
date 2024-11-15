@@ -137,7 +137,7 @@ export default function Navbar({ className }: { className?: string }) {
               </a>
             </li>
             <li className="font-sans">
-              <a href="/Contact" className="text-white">
+              <a href="/contact" className="text-white">
                 Contact
               </a>
             </li>
@@ -203,7 +203,7 @@ export default function Navbar({ className }: { className?: string }) {
               <a href="/blogs">Blog & Vidéos</a>
             </li>
             <li className="font-sans">
-              <a href="/Contact">Contact</a>
+              <a href="/contact">Contact</a>
             </li>
           </ul>
           <div className="flex justify-center items-center space-x-4">
