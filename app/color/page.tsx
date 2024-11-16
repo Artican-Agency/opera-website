@@ -58,28 +58,36 @@ function HeroSection() {
 export default function Page() {
   const [activeTab, setActiveTab] = useState(1);
   const [selectedImage, setSelectedImage] = useState(null);
+  const [backgroundColor, setBackgroundColor] = useState('#fffff');
+
+  const handleImageClick = (image: number, color: string) => {
+    setSelectedImage(image as any);
+    setBackgroundColor(color);
+  };
 
   return (
-    <main className='bg-white  h-full overflow-y-hidden'>
+    <main className='bg-white h-full overflow-y-hidden'>
       <HeroSection />
       <div className='flex flex-col justify-center items-center my-24 space-y-12'>
         <div className='flex flex-col items-center space-y-12 md:flex-row md:space-x-12'>
           {/* Main Image */}
           <Image
-            className='max-w-2xl rounded-lg bg-red-800'
-            src={Color1}
-            alt='Color 1'
+            className='max-w-2xl rounded-lg'
+            src={selectedImage || Color1}
+            alt='Selected Color'
+            style={{ backgroundColor: backgroundColor }}
           />
 
           {/* Color Palette */}
-          <div className='bg-gray-100 w-full md:w-[400px] py-6 px-4 rounded-lg'>
-            <ScrollArea className='h-[200px] mx-auto overflow-x-hidden'>
-              <div className='grid grid-cols-10 gap-2'>
+          <div className='bg-gray-100 md:w-[400px] py-6 px-4 rounded-lg overflow-x-hidden w-full'>
+            <ScrollArea className='h-[200px] mx-auto overflow-x-hidden w-full'>
+              <div className='grid grid-cols-9 gap-2 w-full'>
                 {colors.map(color => (
                   <button
                     key={color.name}
                     className='w-8 h-8 rounded-full'
                     style={{ backgroundColor: color.rgb }}
+                    onClick={() => handleImageClick(selectedImage as any, color.rgb)}
                   >
                     <span className='sr-only'>{color.name}</span>
                   </button>
@@ -91,16 +99,12 @@ export default function Page() {
         </div>
 
         <div className='space-x-4 flex justify-center items-center'>
-          <button onClick={() => setSelectedImage(1)}>
-            <Image
-              className='max-w-xs rounded-lg bg-red-800'
-              src={Color1}
-              alt='Color 1'
-            />
+          <button onClick={() => handleImageClick(Color1 as any, '#FF0000')}>
+            <Image className='max-w-xs rounded-lg' src={Color1} alt='Color 1' />
           </button>
-          <button onClick={() => setSelectedImage(2)}>
+          <button onClick={() => handleImageClick(Color2 as any, '#00FF00')}>
             <Image
-              className='max-w-xs rounded-lg bg-red-800'
+              className='max-w-xs rounded-lg bg-white'
               src={Color2}
               alt='Color 2'
             />
