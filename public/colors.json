@@ -1,0 +1,858 @@
+[
+  {
+    "name": "RAL",
+    "rgb": "rgb(204,0,0)"
+  },
+  {
+    "name": "RAL 1000",
+    "rgb": "rgb(255,255,51)"
+  },
+  {
+    "name": "Beige",
+    "rgb": "rgb(194,176,120)"
+  },
+  {
+    "name": "Sandgelb",
+    "rgb": "rgb(198,166,100)"
+  },
+  {
+    "name": "Signalgelb",
+    "rgb": "rgb(229,190,1)"
+  },
+  {
+    "name": "Goldgelb",
+    "rgb": "rgb(205,164,52)"
+  },
+  {
+    "name": "Honiggelb",
+    "rgb": "rgb(169,131,7)"
+  },
+  {
+    "name": "Maisgelb",
+    "rgb": "rgb(228,160,16)"
+  },
+  {
+    "name": "Narzissengelb",
+    "rgb": "rgb(220,157,0)"
+  },
+  {
+    "name": "Braunbeige",
+    "rgb": "rgb(138,102,66)"
+  },
+  {
+    "name": "Zitronengelb",
+    "rgb": "rgb(199,180,70)"
+  },
+  {
+    "name": "Perlweiß",
+    "rgb": "rgb(238,234,205)"
+  },
+  {
+    "name": "Elfenbein",
+    "rgb": "rgb(225,204,79)"
+  },
+  {
+    "name": "Hellelfenbein",
+    "rgb": "rgb(230,214,144)"
+  },
+  {
+    "name": "Schwefelgelb",
+    "rgb": "rgb(237,255,33)"
+  },
+  {
+    "name": "Safrangelb",
+    "rgb": "rgb(245,208,51)"
+  },
+  {
+    "name": "Zinkgelb",
+    "rgb": "rgb(248,243,43)"
+  },
+  {
+    "name": "Graubeige",
+    "rgb": "rgb(158,151,100)"
+  },
+  {
+    "name": "Olivgelb",
+    "rgb": "rgb(153,153,80)"
+  },
+  {
+    "name": "Rapsgelb",
+    "rgb": "rgb(243,218,11)"
+  },
+  {
+    "name": "Verkehrsgelb",
+    "rgb": "rgb(250,210,1)"
+  },
+  {
+    "name": "Ockergelb",
+    "rgb": "rgb(174,160,75)"
+  },
+  {
+    "name": "Leuchtgelb",
+    "rgb": "rgb(255,255,0)"
+  },
+  {
+    "name": "Currygelb",
+    "rgb": "rgb(157,145,1)"
+  },
+  {
+    "name": "Melonengelb",
+    "rgb": "rgb(244,169,0)"
+  },
+  {
+    "name": "Ginstergelb",
+    "rgb": "rgb(214,174,1)"
+  },
+  {
+    "name": "Dahliengelb",
+    "rgb": "rgb(243,165,5)"
+  },
+  {
+    "name": "Pastellgelb",
+    "rgb": "rgb(239,169,74)"
+  },
+  {
+    "name": "Perlbeige",
+    "rgb": "rgb(106,93,77)"
+  },
+  {
+    "name": "Perlgold",
+    "rgb": "rgb(112,83,53)"
+  },
+  {
+    "name": "Sonnengelb",
+    "rgb": "rgb(243,159,24)"
+  },
+  {
+    "name": "RAL 2000",
+    "rgb": "rgb(255,117,20)"
+  },
+  {
+    "name": "Rotorange",
+    "rgb": "rgb(201,60,32)"
+  },
+  {
+    "name": "Blutorange",
+    "rgb": "rgb(203,40,33)"
+  },
+  {
+    "name": "Pastellorange",
+    "rgb": "rgb(255,117,20)"
+  },
+  {
+    "name": "Reinorange",
+    "rgb": "rgb(244,70,17)"
+  },
+  {
+    "name": "Leuchtorange",
+    "rgb": "rgb(255,35,1)"
+  },
+  {
+    "name": "Leuchthellorange",
+    "rgb": "rgb(255,164,32)"
+  },
+  {
+    "name": "Hellrotorange",
+    "rgb": "rgb(247,94,37)"
+  },
+  {
+    "name": "Verkehrsorange",
+    "rgb": "rgb(245,64,33)"
+  },
+  {
+    "name": "Signalorange",
+    "rgb": "rgb(216,75,32)"
+  },
+  {
+    "name": "Tieforange",
+    "rgb": "rgb(236,124,38)"
+  },
+  {
+    "name": "Lachsorange",
+    "rgb": "rgb(229,81,55)"
+  },
+  {
+    "name": "Perlorange",
+    "rgb": "rgb(195,88,49)"
+  },
+  {
+    "name": "RAL 3000",
+    "rgb": "rgb(248,0,0)"
+  },
+  {
+    "name": "Signalrot",
+    "rgb": "rgb(165,32,25)"
+  },
+  {
+    "name": "Karminrot",
+    "rgb": "rgb(162,35,29)"
+  },
+  {
+    "name": "Rubinrot",
+    "rgb": "rgb(155,17,30)"
+  },
+  {
+    "name": "Purpurrot",
+    "rgb": "rgb(117,21,30)"
+  },
+  {
+    "name": "Weinrot",
+    "rgb": "rgb(94,33,41)"
+  },
+  {
+    "name": "Schwarzrot",
+    "rgb": "rgb(53,31,33)"
+  },
+  {
+    "name": "Oxidrot",
+    "rgb": "rgb(100,36,36)"
+  },
+  {
+    "name": "Braunrot",
+    "rgb": "rgb(120,31,25)"
+  },
+  {
+    "name": "Beigerot",
+    "rgb": "rgb(193,135,107)"
+  },
+  {
+    "name": "Tomatenrot",
+    "rgb": "rgb(161,35,18)"
+  },
+  {
+    "name": "Altrosa",
+    "rgb": "rgb(211,110,112)"
+  },
+  {
+    "name": "Hellrosa",
+    "rgb": "rgb(234,137,154)"
+  },
+  {
+    "name": "Korallenrot",
+    "rgb": "rgb(179,40,33)"
+  },
+  {
+    "name": "Rosé",
+    "rgb": "rgb(230,50,68)"
+  },
+  {
+    "name": "Erdbeerrot",
+    "rgb": "rgb(213,48,50)"
+  },
+  {
+    "name": "Verkehrsrot",
+    "rgb": "rgb(204,6,5)"
+  },
+  {
+    "name": "Lachsrot",
+    "rgb": "rgb(217,80,48)"
+  },
+  {
+    "name": "Leuchtrot",
+    "rgb": "rgb(248,0,0)"
+  },
+  {
+    "name": "Leuchthellrot",
+    "rgb": "rgb(254,0,0)"
+  },
+  {
+    "name": "Himbeerrot",
+    "rgb": "rgb(197,29,52)"
+  },
+  {
+    "name": "Reinrot",
+    "rgb": "rgb(203,50,52)"
+  },
+  {
+    "name": "Orientrot",
+    "rgb": "rgb(179,36,40)"
+  },
+  {
+    "name": "Perlrubinrot",
+    "rgb": "rgb(114,20,34)"
+  },
+  {
+    "name": "Perlrosa",
+    "rgb": "rgb(180,76,67)"
+  },
+  {
+    "name": "RAL 4001",
+    "rgb": "rgb(204,51,204)"
+  },
+  {
+    "name": "Rotviolett",
+    "rgb": "rgb(146,43,62)"
+  },
+  {
+    "name": "Erikaviolett",
+    "rgb": "rgb(222,76,138)"
+  },
+  {
+    "name": "Bordeauxviolett",
+    "rgb": "rgb(110,28,52)"
+  },
+  {
+    "name": "Blaulila",
+    "rgb": "rgb(108,70,117)"
+  },
+  {
+    "name": "Verkehrspurpur",
+    "rgb": "rgb(160,52,114)"
+  },
+  {
+    "name": "Purpurviolett",
+    "rgb": "rgb(74,25,44)"
+  },
+  {
+    "name": "Signalviolett",
+    "rgb": "rgb(146,78,125)"
+  },
+  {
+    "name": "Pastellviolett",
+    "rgb": "rgb(164,125,144)"
+  },
+  {
+    "name": "Telemagenta",
+    "rgb": "rgb(215,45,109)"
+  },
+  {
+    "name": "Perlviolett",
+    "rgb": "rgb(134,115,161)"
+  },
+  {
+    "name": "Perlbrombeer",
+    "rgb": "rgb(108,104,129)"
+  },
+  {
+    "name": "RAL 5000",
+    "rgb": "rgb(34,113,179)"
+  },
+  {
+    "name": "Grünblau",
+    "rgb": "rgb(31,52,56)"
+  },
+  {
+    "name": "Ultramarinblau",
+    "rgb": "rgb(32,33,79)"
+  },
+  {
+    "name": "Saphirblau",
+    "rgb": "rgb(29,30,51)"
+  },
+  {
+    "name": "Schwarzblau",
+    "rgb": "rgb(24,23,28)"
+  },
+  {
+    "name": "Signalblau",
+    "rgb": "rgb(30,45,110)"
+  },
+  {
+    "name": "Brillantblau",
+    "rgb": "rgb(62,95,138)"
+  },
+  {
+    "name": "Graublau",
+    "rgb": "rgb(38,37,45)"
+  },
+  {
+    "name": "Azurblau",
+    "rgb": "rgb(2,86,105)"
+  },
+  {
+    "name": "Enzianblau",
+    "rgb": "rgb(14,41,75)"
+  },
+  {
+    "name": "Stahlblau",
+    "rgb": "rgb(35,26,36)"
+  },
+  {
+    "name": "Lichtblau",
+    "rgb": "rgb(59,131,189)"
+  },
+  {
+    "name": "Kobaltblau",
+    "rgb": "rgb(30,33,61)"
+  },
+  {
+    "name": "Taubenblau",
+    "rgb": "rgb(96,110,140)"
+  },
+  {
+    "name": "Himmelblau",
+    "rgb": "rgb(34,113,179)"
+  },
+  {
+    "name": "Verkehrsblau",
+    "rgb": "rgb(6,57,113)"
+  },
+  {
+    "name": "Türkisblau",
+    "rgb": "rgb(63,136,143)"
+  },
+  {
+    "name": "Capriblau",
+    "rgb": "rgb(27,85,131)"
+  },
+  {
+    "name": "Ozeanblau",
+    "rgb": "rgb(29,51,74)"
+  },
+  {
+    "name": "Wasserblau",
+    "rgb": "rgb(37,109,123)"
+  },
+  {
+    "name": "Nachtblau",
+    "rgb": "rgb(37,40,80)"
+  },
+  {
+    "name": "Fernblau",
+    "rgb": "rgb(73,103,141)"
+  },
+  {
+    "name": "Pastellblau",
+    "rgb": "rgb(93,155,155)"
+  },
+  {
+    "name": "Perlenzian",
+    "rgb": "rgb(42,100,120)"
+  },
+  {
+    "name": "Perlnachtblau",
+    "rgb": "rgb(16,44,84)"
+  },
+  {
+    "name": "RAL 6000",
+    "rgb": "rgb(87,166,57)"
+  },
+  {
+    "name": "Smaragdgrün",
+    "rgb": "rgb(40,114,51)"
+  },
+  {
+    "name": "Laubgrün",
+    "rgb": "rgb(45,87,44)"
+  },
+  {
+    "name": "Olivgrün",
+    "rgb": "rgb(66,70,50)"
+  },
+  {
+    "name": "Blaugrün",
+    "rgb": "rgb(31,58,61)"
+  },
+  {
+    "name": "Moosgrün",
+    "rgb": "rgb(47,69,56)"
+  },
+  {
+    "name": "Grauoliv",
+    "rgb": "rgb(62,59,50)"
+  },
+  {
+    "name": "Flaschengrün",
+    "rgb": "rgb(52,59,41)"
+  },
+  {
+    "name": "Braungrün",
+    "rgb": "rgb(57,53,42)"
+  },
+  {
+    "name": "Tannengrün",
+    "rgb": "rgb(49,55,43)"
+  },
+  {
+    "name": "Grasgrün",
+    "rgb": "rgb(53,104,45)"
+  },
+  {
+    "name": "Resedagrün",
+    "rgb": "rgb(88,114,70)"
+  },
+  {
+    "name": "Schwarzgrün",
+    "rgb": "rgb(52,62,64)"
+  },
+  {
+    "name": "Schilfgrün",
+    "rgb": "rgb(108,113,86)"
+  },
+  {
+    "name": "Gelboliv",
+    "rgb": "rgb(71,64,46)"
+  },
+  {
+    "name": "Schwarzoliv",
+    "rgb": "rgb(59,60,54)"
+  },
+  {
+    "name": "Türkisgrün",
+    "rgb": "rgb(30,89,69)"
+  },
+  {
+    "name": "Maigrün",
+    "rgb": "rgb(76,145,65)"
+  },
+  {
+    "name": "Gelbgrün",
+    "rgb": "rgb(87,166,57)"
+  },
+  {
+    "name": "Weißgrün",
+    "rgb": "rgb(189,236,182)"
+  },
+  {
+    "name": "Chromoxidgrün",
+    "rgb": "rgb(46,58,35)"
+  },
+  {
+    "name": "Blassgrün",
+    "rgb": "rgb(137,172,118)"
+  },
+  {
+    "name": "Braunoliv",
+    "rgb": "rgb(37,34,27)"
+  },
+  {
+    "name": "Verkehrsgrün",
+    "rgb": "rgb(48,132,70)"
+  },
+  {
+    "name": "Farngrün",
+    "rgb": "rgb(61,100,45)"
+  },
+  {
+    "name": "Opalgrün",
+    "rgb": "rgb(1,93,82)"
+  },
+  {
+    "name": "Lichtgrün",
+    "rgb": "rgb(132,195,190)"
+  },
+  {
+    "name": "Kieferngrün",
+    "rgb": "rgb(44,85,69)"
+  },
+  {
+    "name": "Minzgrün",
+    "rgb": "rgb(32,96,61)"
+  },
+  {
+    "name": "Signalgrün",
+    "rgb": "rgb(49,127,67)"
+  },
+  {
+    "name": "Minttürkis",
+    "rgb": "rgb(73,126,118)"
+  },
+  {
+    "name": "Pastelltürkis",
+    "rgb": "rgb(127,181,181)"
+  },
+  {
+    "name": "Perlgrün",
+    "rgb": "rgb(28,84,45)"
+  },
+  {
+    "name": "Perlopalgrün",
+    "rgb": "rgb(25,55,55)"
+  },
+  {
+    "name": "Reingrün",
+    "rgb": "rgb(0,143,57)"
+  },
+  {
+    "name": "Leuchtgrün",
+    "rgb": "rgb(0,187,45)"
+  },
+  {
+    "name": "RAL 7000",
+    "rgb": "rgb(192,192,192)"
+  },
+  {
+    "name": "Silbergrau",
+    "rgb": "rgb(138,149,151)"
+  },
+  {
+    "name": "Olivgrau",
+    "rgb": "rgb(126,123,82)"
+  },
+  {
+    "name": "Moosgrau",
+    "rgb": "rgb(108,112,89)"
+  },
+  {
+    "name": "Signalgrau",
+    "rgb": "rgb(150,153,146)"
+  },
+  {
+    "name": "Mausgrau",
+    "rgb": "rgb(100,107,99)"
+  },
+  {
+    "name": "Beigegrau",
+    "rgb": "rgb(109,101,82)"
+  },
+  {
+    "name": "Khakigrau",
+    "rgb": "rgb(106,95,49)"
+  },
+  {
+    "name": "Grüngrau",
+    "rgb": "rgb(77,86,69)"
+  },
+  {
+    "name": "Zeltgrau",
+    "rgb": "rgb(76,81,74)"
+  },
+  {
+    "name": "Eisengrau",
+    "rgb": "rgb(67,75,77)"
+  },
+  {
+    "name": "Basaltgrau",
+    "rgb": "rgb(78,87,84)"
+  },
+  {
+    "name": "Braungrau",
+    "rgb": "rgb(70,69,49)"
+  },
+  {
+    "name": "Schiefergrau",
+    "rgb": "rgb(67,71,80)"
+  },
+  {
+    "name": "Anthrazitgrau",
+    "rgb": "rgb(41,49,51)"
+  },
+  {
+    "name": "Schwarzgrau",
+    "rgb": "rgb(35,40,43)"
+  },
+  {
+    "name": "Umbragrau",
+    "rgb": "rgb(51,47,44)"
+  },
+  {
+    "name": "Betongrau",
+    "rgb": "rgb(104,108,94)"
+  },
+  {
+    "name": "Graphitgrau",
+    "rgb": "rgb(71,74,81)"
+  },
+  {
+    "name": "Granitgrau",
+    "rgb": "rgb(47,53,59)"
+  },
+  {
+    "name": "Steingrau",
+    "rgb": "rgb(139,140,122)"
+  },
+  {
+    "name": "Blaugrau",
+    "rgb": "rgb(71,75,78)"
+  },
+  {
+    "name": "Kieselgrau",
+    "rgb": "rgb(184,183,153)"
+  },
+  {
+    "name": "Zementgrau",
+    "rgb": "rgb(125,132,113)"
+  },
+  {
+    "name": "Gelbgrau",
+    "rgb": "rgb(143,139,102)"
+  },
+  {
+    "name": "Lichtgrau",
+    "rgb": "rgb(215,215,215)"
+  },
+  {
+    "name": "Platingrau",
+    "rgb": "rgb(127,118,121)"
+  },
+  {
+    "name": "Staubgrau",
+    "rgb": "rgb(125,127,125)"
+  },
+  {
+    "name": "Achatgrau",
+    "rgb": "rgb(195,195,195)"
+  },
+  {
+    "name": "Quarzgrau",
+    "rgb": "rgb(108,105,96)"
+  },
+  {
+    "name": "Fenstergrau",
+    "rgb": "rgb(157,161,170)"
+  },
+  {
+    "name": "Verkehrsgrau A",
+    "rgb": "rgb(141,148,141)"
+  },
+  {
+    "name": "Verkehrsgrau B",
+    "rgb": "rgb(78,84,82)"
+  },
+  {
+    "name": "Seidengrau",
+    "rgb": "rgb(202,196,176)"
+  },
+  {
+    "name": "Telegrau 1",
+    "rgb": "rgb(144,144,144)"
+  },
+  {
+    "name": "Telegrau 2",
+    "rgb": "rgb(130,137,143)"
+  },
+  {
+    "name": "Telegrau 4",
+    "rgb": "rgb(208,208,208)"
+  },
+  {
+    "name": "Perlmausgrau",
+    "rgb": "rgb(137,129,118)"
+  },
+  {
+    "name": "RAL 8000",
+    "rgb": "rgb(166,94,46)"
+  },
+  {
+    "name": "Ockerbraun",
+    "rgb": "rgb(149,95,32)"
+  },
+  {
+    "name": "Signalbraun",
+    "rgb": "rgb(108,59,42)"
+  },
+  {
+    "name": "Lehmbraun",
+    "rgb": "rgb(115,66,34)"
+  },
+  {
+    "name": "Kupferbraun",
+    "rgb": "rgb(142,64,42)"
+  },
+  {
+    "name": "Rehbraun",
+    "rgb": "rgb(89,53,31)"
+  },
+  {
+    "name": "Olivbraun",
+    "rgb": "rgb(111,79,40)"
+  },
+  {
+    "name": "Nussbraun",
+    "rgb": "rgb(91,58,41)"
+  },
+  {
+    "name": "Rotbraun",
+    "rgb": "rgb(89,35,33)"
+  },
+  {
+    "name": "Sepiabraun",
+    "rgb": "rgb(56,44,30)"
+  },
+  {
+    "name": "Kastanienbraun",
+    "rgb": "rgb(99,58,52)"
+  },
+  {
+    "name": "Mahagonibraun",
+    "rgb": "rgb(76,47,39)"
+  },
+  {
+    "name": "Schokoladen-\n\nbraun",
+    "rgb": "rgb(69,50,46)"
+  },
+  {
+    "name": "Graubraun",
+    "rgb": "rgb(64,58,58)"
+  },
+  {
+    "name": "Schwarzbraun",
+    "rgb": "rgb(33,33,33)"
+  },
+  {
+    "name": "Orangebraun",
+    "rgb": "rgb(166,94,46)"
+  },
+  {
+    "name": "Beigebraun",
+    "rgb": "rgb(121,85,61)"
+  },
+  {
+    "name": "Blassbraun",
+    "rgb": "rgb(117,92,72)"
+  },
+  {
+    "name": "Terrabraun",
+    "rgb": "rgb(78,59,49)"
+  },
+  {
+    "name": "Perlkupfer",
+    "rgb": "rgb(118,60,40)"
+  },
+  {
+    "name": "RAL 9001",
+    "rgb": "rgb(255,255,255)"
+  },
+  {
+    "name": "Grauweiß",
+    "rgb": "rgb(231,235,218)"
+  },
+  {
+    "name": "Signalweiß",
+    "rgb": "rgb(244,244,244)"
+  },
+  {
+    "name": "Signalschwarz",
+    "rgb": "rgb(40,40,40)"
+  },
+  {
+    "name": "Tiefschwarz",
+    "rgb": "rgb(10,10,10)"
+  },
+  {
+    "name": "Weißaluminium",
+    "rgb": "rgb(165,165,165)"
+  },
+  {
+    "name": "Graualuminium",
+    "rgb": "rgb(143,143,143)"
+  },
+  {
+    "name": "Reinweiß",
+    "rgb": "rgb(255,255,255)"
+  },
+  {
+    "name": "Graphitschwarz",
+    "rgb": "rgb(28,28,28)"
+  },
+  {
+    "name": "Verkehrsweiß",
+    "rgb": "rgb(246,246,246)"
+  },
+  {
+    "name": "Verkehrs-\n\nschwarz",
+    "rgb": "rgb(30,30,29)"
+  },
+  {
+    "name": "Papyrusweiß",
+    "rgb": "rgb(215,215,215)"
+  },
+  {
+    "name": "Perlhellgrau",
+    "rgb": "rgb(156,156,156)"
+  },
+  {
+    "name": "Perldunkelgrau",
+    "rgb": "rgb(130,130,130)"
+  }
+]
