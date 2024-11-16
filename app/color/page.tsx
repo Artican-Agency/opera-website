@@ -99,7 +99,7 @@ export default function Page() {
   const handleImageClick = (image: any, color: string) => {
     setSelectedSchema(null); // Clear schema
     setSelectedImage(image); // Update the main image
-    setBackgroundColor(color); // Apply color
+    setBackgroundColor(color as any); // Apply color
   };
 
   return (
@@ -110,7 +110,7 @@ export default function Page() {
           {/* Main Image with Background */}
           <div
             className="w-[600px] h-[400px] rounded-lg flex items-center justify-center"
-            style={selectedSchema || { backgroundColor }}>
+            style={selectedSchema || (backgroundColor ? { backgroundColor } : undefined)}>
             <Image
               className="rounded-lg"
               src={selectedImage}
