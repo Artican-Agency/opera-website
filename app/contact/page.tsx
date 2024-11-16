@@ -78,8 +78,8 @@ function ContactForm() {
   return (
     <div className='flex lg:flex-row flex-col justify-center items-center w-full p-6 my-24'>
       <div className='mb-8 lg:w-1/3 mx-2'>
-        <h1 className='text-4xl font-bold mb-4 text-center lg:text-start font-open'>Contactez nous</h1>
-        <p className='text-muted-foreground font-open lg:text-start text-center'>
+        <h1 className='text-4xl font-bold mb-4 text-center lg:text-start font-open text-black'>Contactez nous</h1>
+        <p className='text-muted-foreground font-open lg:text-start text-center text-black'>
           Reach out to us for any inquiries, feedback, or support – we're here
           to help !
         </p>
