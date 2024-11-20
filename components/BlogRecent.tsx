@@ -71,7 +71,7 @@ function BlogRecent() {
                       fill
                       className="object-cover max-w-full w-full h-auto"
                     />
-                    <div className="absolute bottom-4 left-4 bg-black/60 p-2 rounded-lg">
+                    <div className="absolute bottom-4 w-full bg-black/60 p-2 h-24">
                       <h3 className="text-white font-open text-lg">
                         {blog.title}
                       </h3>
