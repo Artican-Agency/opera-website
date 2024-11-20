@@ -7,7 +7,7 @@ function StatSection() {
         <h2 className="font-sans text-sm text-black font-semibold">
           Point ventes
         </h2>
-        <h1 className="font-sans text-4xl font-bold text-black">80</h1>
+        <h1 className="font-sans text-4xl font-bold text-black">80+</h1>
       </div>
       <div className="p-4">
         <h2 className="font-sans text-sm text-black font-semibold">
