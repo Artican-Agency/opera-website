@@ -34,7 +34,9 @@ export default function AnnouncementSection() {
 
   if (!loading)
     return (
-      <div className="announce relative lg:h-[296px] h-full overflow-hidden w-2/3 rounded-2xl m-6 p-12 mx-12">
+      <section
+        id="announce"
+        className="announce relative lg:h-[296px] h-full overflow-hidden w-2/3 rounded-2xl m-6 p-12 mx-12">
         <Image
           src={yellow_bg}
           alt="Yellow textured background"
@@ -85,7 +87,7 @@ export default function AnnouncementSection() {
             ))}
           </Swiper>
         </div>
-      </div>
+      </section>
     );
   else
     return (

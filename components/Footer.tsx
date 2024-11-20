@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="grid gap-4">
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="#qui" className="text-gray-300 hover:text-white">
               Qui sommes nous
             </Link>
             <Link
@@ -52,23 +52,23 @@ export default function Footer() {
               className="text-gray-300 hover:text-white">
               Produits
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="/blogs" className="text-gray-300 hover:text-white">
               Blog
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="/contact" className="text-gray-300 hover:text-white">
               Contactez nous
             </Link>
           </div>
 
           <div className="grid gap-4">
-            <Link href="#" className="text-gray-300 hover:text-white">
-              Offre
+            <Link href="#announce" className="text-gray-300 hover:text-white">
+              Annonce
             </Link>
-            <Link href="#" className="text-gray-300 hover:text-white">
+            <Link href="#qui" className="text-gray-300 hover:text-white">
               Notre équipe
             </Link>
             <Link href="#" className="text-gray-300 hover:text-white">
-              Leadership
+              Terms & Conditions
             </Link>
             <Link href="#" className="text-gray-300 hover:text-white">
               Privacy Policy
