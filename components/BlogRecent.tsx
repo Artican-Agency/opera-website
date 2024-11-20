@@ -23,7 +23,7 @@ function BlogRecent() {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const { data } = await instance.get("/blog/all"); // Replace with your actual API endpoint
+        const { data } = await instance.get("/blog/all");
         if (data.data.length === 0) return;
 
         setBlogs(data.data);
@@ -70,7 +70,7 @@ function BlogRecent() {
               ))
             : blogs.map((blog) => (
                 <SwiperSlide key={blog.id}>
-                  <div className="relative h-96 w-full">
+                  <div className="relative h-[500px] w-full">
                     <Image
                       src={blog.blog_img}
                       alt={blog.title}
