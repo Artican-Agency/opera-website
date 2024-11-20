@@ -25,16 +25,20 @@ function HeroSection() {
       </p>
 
       <div className="space-x-2 max-sm:space-y-2 xs:flex justify-center items-center">
-        <Button
-          variant="default"
-          className="hover:bg-gray-200 bg-primary-ui text-[#171717] font-medium px-4 py-2 rounded-full">
-          Visitez nos travaux
-        </Button>
-        <Button
-          variant="outline"
-          className="bg-transparent text-white font-medium px-4 py-2 rounded-full">
-          Trouvez votre produit
-        </Button>
+        <a href="/produit/batiments">
+          <Button
+            variant="default"
+            className="hover:bg-gray-200 bg-primary-ui text-[#171717] font-medium px-4 py-2 rounded-full">
+            Trouvez votre produit
+          </Button>
+        </a>
+        <a href="#qui">
+          <Button
+            variant="outline"
+            className="bg-transparent text-white font-medium px-4 py-2 rounded-full">
+            Visitez nos travaux
+          </Button>
+        </a>
       </div>
     </div>
   );

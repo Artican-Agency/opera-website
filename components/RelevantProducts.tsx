@@ -30,7 +30,7 @@ function RelevantProducts() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <section className="bg-white flex flex-col justify-center md:items-center xl:items-start h-full px-24 py-12 overflow-hidden">
+    <section id="trav" className="bg-white flex flex-col justify-center md:items-center xl:items-start h-full px-24 py-12 overflow-hidden">
       <h1 className="text-black font-sans font-bold text-5xl xl:text-start text-center">
         Travail avec un excellent <span className="block">Produit.</span>
       </h1>
