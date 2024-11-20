@@ -13,7 +13,12 @@ import "swiper/css";
 function BlogRecent() {
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const isMobile = window.matchMedia("(max-width: 800px)").matches;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    let isMobile = window.matchMedia("(max-width: 800px)").matches;
+    setIsMobile(isMobile);
+  });
 
   useEffect(() => {
     const fetchBlogs = async () => {
