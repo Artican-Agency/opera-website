@@ -13,6 +13,7 @@ import "swiper/css";
 function BlogRecent() {
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const isMobile = window.matchMedia("(max-width: 800px)").matches;
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -53,7 +54,7 @@ function BlogRecent() {
           autoplay={{
             delay: 3000,
           }}
-          slidesPerView={1.5}
+          slidesPerView={isMobile ? 1 : 1.5}
           modules={[Autoplay]}
           className="w-full h-full z-0 myswiper">
           {loading
