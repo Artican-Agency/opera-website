@@ -99,29 +99,6 @@ export default function Footer() {
           </Link>
         </div>
 
-        {/* <div className="mt-8 flex flex-wrap gap-4">
-          <Link
-            href="#"
-            className="rounded border border-gray-700 px-6 py-2 text-sm text-gray-300 hover:border-gray-600 hover:text-white">
-            Event
-          </Link>
-          <Link
-            href="#"
-            className="rounded border border-gray-700 px-6 py-2 text-sm text-gray-300 hover:border-gray-600 hover:text-white">
-            Event
-          </Link>
-          <Link
-            href="#"
-            className="rounded border border-gray-700 px-6 py-2 text-sm text-gray-300 hover:border-gray-600 hover:text-white">
-            Event
-          </Link>
-          <Link
-            href="#"
-            className="rounded border border-gray-700 px-6 py-2 text-sm text-gray-300 hover:border-gray-600 hover:text-white">
-            Event
-          </Link>
-        </div> */}
-
         <div className="mt-8 flex flex-wrap items-center justify-between border-t border-gray-800 pt-8 text-sm text-gray-400">
           <p>Copyright 2024 Artican Agency. All Rights Reserved.</p>
           <div className="flex gap-4">

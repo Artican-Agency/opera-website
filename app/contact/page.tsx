@@ -1,6 +1,5 @@
 "use client";
 import Navbar from "@/components/Navbar";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SwiperSlide, Swiper } from "swiper/react";
 import bgPhoto from "../../public/colors.png";
 
@@ -11,14 +10,7 @@ import { Autoplay } from "swiper/modules";
 
 import Footer from "@/components/Footer";
 import PainterFinder from "@/components/PainterFinder";
-
-import { useEffect, useState } from "react";
-import Link from "next/link";
-import { instance } from "@/instance";
-import { formatDate } from "@/lib/utils";
-import { Skeleton } from "@/components/ui/skeleton";
 import { ChevronRight } from "lucide-react";
-import AnnouncementSection from "@/components/AnnouncementSection";
 
 function HeroSection() {
   return (
@@ -55,25 +47,11 @@ function HeroSection() {
 }
 
 import { Button } from "@/components/ui/button";
-import { Select, SelectTrigger } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    service: "",
-    message: "",
-  });
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <div className="flex lg:flex-row flex-col justify-center items-center w-full p-6 my-24">
       <div className="mb-8 lg:w-1/3 mx-2">
@@ -86,15 +64,19 @@ function ContactForm() {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6 w-3/5">
+      <form
+        target="_blank"
+        action="https://formsubmit.co/contact@operapeinture.com"
+        method="POST"
+        className="space-y-6 w-3/5">
         <div>
           <Label className="text-black" htmlFor="name">
             Name
           </Label>
           <Input
             id="name"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            type="text"
+            name="name"
             className="mt-2 text-black"
             required
           />
@@ -107,10 +89,7 @@ function ContactForm() {
           <Input
             id="email"
             type="email"
-            value={formData.email}
-            onChange={(e) =>
-              setFormData({ ...formData, email: e.target.value })
-            }
+            name="email"
             className="mt-2 text-black"
             required
           />
@@ -122,10 +101,7 @@ function ContactForm() {
           </Label>
           <Textarea
             id="message"
-            value={formData.message}
-            onChange={(e) =>
-              setFormData({ ...formData, message: e.target.value })
-            }
+            name="message"
             className="mt-2 min-h-[150px] text-black"
             required
           />
