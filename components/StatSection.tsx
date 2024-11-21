@@ -2,7 +2,7 @@ import React from "react";
 
 function StatSection() {
   return (
-    <div className="bg-primary-ui md:max-w-[700px] rounded-full flex justify-evenly items-center relative bottom-12 xl:left-1/3 md:left-1/4 z-20">
+    <div className="bg-primary-ui max-md:mx-4 md:max-w-[700px] rounded-full flex justify-evenly items-center relative bottom-12 xl:left-1/3 md:left-1/4 z-20">
       <div className="p-4">
         <h2 className="font-sans text-sm  max-w-24 text-center text-black font-semibold">
           Point ventes
