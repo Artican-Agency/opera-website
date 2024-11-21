@@ -54,7 +54,7 @@ function BlogRecent() {
         </a>
       </div>
 
-      <div className="w-full h-full py-4">
+      <a href="/blogs" className="w-full h-full py-4">
         <Swiper
           autoplay={{
             delay: 3000,
@@ -89,7 +89,7 @@ function BlogRecent() {
                 </SwiperSlide>
               ))}
         </Swiper>
-      </div>
+      </a>
     </section>
   );
 }
