@@ -39,19 +39,9 @@ export default function Navbar({ className }: { className?: string }) {
 
           {/* Responsive Controls */}
           <div className="flex justify-center items-center space-x-4 xl:hidden">
-            <Dialog>
-              <DialogTrigger asChild>
-                <button className="bg-transparent">
-                  <CircleHelp color="white" />
-                </button>
-              </DialogTrigger>
-              <DialogContent>
-                <p>Help content goes here...</p>
-                <DialogClose asChild>
-                  <button className="text-white">Close</button>
-                </DialogClose>
-              </DialogContent>
-            </Dialog>
+            <a href="/contact" className="bg-transparent">
+              <CircleHelp color="white" />
+            </a>
 
             <button className="bg-transparent">
               <Globe color="white" />
