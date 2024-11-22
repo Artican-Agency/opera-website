@@ -16,43 +16,124 @@ import satine from "../public/Satine.png";
 import AntiBact from "../public/AntiBact.png";
 import Plafoni from "../public/Plafoni.png";
 import FixateurPlus from "../public/fixateur.png";
+import { useLanguage } from "@/zustand";
+import { Language } from "@/lib/utils";
 
 const products = [
-  { id: 0, src: Plafoni, alt: "Plafoni", name: "Plafoni" },
-  { id: 1, src: biton, alt: "Béton Fix", name: "Béton Fix" },
-  { id: 2, src: bait, alt: "Opéra Mat", name: "Opéra Mat" },
-  { id: 3, src: satine, alt: "Satiné", name: "Satiné" },
-  { id: 4, src: AntiBact, alt: "Anti Bact", name: "Anti Bact" },
-  { id: 6, src: FixateurPlus, alt: "Fixateur Plus", name: "Fixateur Plus" },
+  {
+    id: 0,
+    src: Plafoni,
+    alt: {
+      en: "Plafoni",
+      fr: "Plafoni",
+      ar: "بلافوني",
+    },
+    name: {
+      en: "Plafoni",
+      fr: "Plafoni",
+      ar: "بلافوني",
+    },
+  },
+  {
+    id: 1,
+    src: biton,
+    alt: {
+      en: "Béton Fix",
+      fr: "Béton Fix",
+      ar: "بيتون فيكس",
+    },
+    name: {
+      en: "Béton Fix",
+      fr: "Béton Fix",
+      ar: "بيتون فيكس",
+    },
+  },
+  {
+    id: 2,
+    src: bait,
+    alt: {
+      en: "Opéra Mat",
+      fr: "Opéra Mat",
+      ar: "أوبرا مات",
+    },
+    name: {
+      en: "Opéra Mat",
+      fr: "Opéra Mat",
+      ar: "أوبرا مات",
+    },
+  },
+  {
+    id: 3,
+    src: satine,
+    alt: {
+      en: "Satiné",
+      fr: "Satiné",
+      ar: "ساتيني",
+    },
+    name: {
+      en: "Satiné",
+      fr: "Satiné",
+      ar: "ساتيني",
+    },
+  },
+  {
+    id: 4,
+    src: AntiBact,
+    alt: {
+      en: "Anti Bact",
+      fr: "Anti Bact",
+      ar: "أنتي باكت",
+    },
+    name: {
+      en: "Anti Bact",
+      fr: "Anti Bact",
+      ar: "أنتي باكت",
+    },
+  },
+  {
+    id: 5,
+    src: FixateurPlus,
+    alt: {
+      en: "Fixateur Plus",
+      fr: "Fixateur Plus",
+      ar: "فيكساتور بلس",
+    },
+    name: {
+      en: "Fixateur Plus",
+      fr: "Fixateur Plus",
+      ar: "فيكساتور بلس",
+    },
+  },
 ];
 
 function RelevantProducts() {
+  const { switchLanguage, language } = useLanguage();
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <section id="trav" className="bg-white flex flex-col justify-center md:items-center xl:items-start h-full px-24 py-12 overflow-hidden">
+    <section
+      dir={language == "ar" ? "rtl" : "ltr"}
+      id="trav"
+      className="bg-white flex flex-col justify-center md:items-center xl:items-start h-full px-24 py-12 overflow-hidden">
       <h1 className="text-black font-sans font-bold text-5xl xl:text-start text-center">
-        Travail avec un excellent <span className="block">Produit.</span>
+        {Language.productSection.title[language]}{" "}
       </h1>
 
       <p className="min-w-[220px] xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 xl:text-start text-center mb-8">
-        Offre des peintures de haute qualité, alliant innovation, durabilité et
-        respect de l'environnement, pour tous vos projets de peinture.{" "}
+        {Language.productSection.subtitle[language]}{" "}
       </p>
 
       <div className="flex">
         <div className="flex items-start justify-start mt-2">
           <div className="flex flex-col justify-center items-start xl:py-6 mb-6 w-full">
             <p className="max-w-[300px] min-w-[220px] max-xl:hidden text-xl text-[#6A6A6A] font-medium relative md:top-6 xl:text-start text-center">
-              Offre des peintures de haute qualité, alliant innovation,
-              durabilité et respect de l'environnement, pour tous vos projets de
-              peinture.
+              {Language.productSection.subtitle[language]}{" "}
             </p>
 
             <Button
               variant="default"
               className="relative top-12 py-0 rounded-full w-[120px] text-xl px-8 text-center xl:text-start max-xl:hidden">
-              Plus
+              {Language.productSection.button.text[language]}{" "}
             </Button>
           </div>
 
@@ -62,6 +143,8 @@ function RelevantProducts() {
               centeredSlides={true}
               autoplay={{
                 delay: 1500,
+                reverseDirection: language == "ar",
+                disableOnInteraction: true,
               }}
               loop={true}
               onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -79,10 +162,10 @@ function RelevantProducts() {
                     src={products[0].src}
                     width={174}
                     height={183}
-                    alt={products[0].alt}
+                    alt={products[0].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[0].name}
+                    {products[0].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -99,10 +182,10 @@ function RelevantProducts() {
                     src={products[1].src}
                     width={174}
                     height={183}
-                    alt={products[1].alt}
+                    alt={products[1].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[1].name}
+                    {products[1].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -119,10 +202,10 @@ function RelevantProducts() {
                     src={products[2].src}
                     width={174}
                     height={183}
-                    alt={products[2].alt}
+                    alt={products[2].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[2].name}
+                    {products[2].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -139,10 +222,10 @@ function RelevantProducts() {
                     src={products[3].src}
                     width={174}
                     height={183}
-                    alt={products[3].alt}
+                    alt={products[3].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[3].name}
+                    {products[3].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -159,10 +242,10 @@ function RelevantProducts() {
                     src={products[4].src}
                     width={174}
                     height={183}
-                    alt={products[4].alt}
+                    alt={products[4].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[4].name}
+                    {products[4].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -179,10 +262,10 @@ function RelevantProducts() {
                     src={products[5].src}
                     width={174}
                     height={183}
-                    alt={products[5].alt}
+                    alt={products[5].alt[language]}
                   />
                   <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                    {products[5].name}
+                    {products[5].name[language]}
                   </h2>
                 </motion.div>
               </SwiperSlide>
@@ -196,6 +279,8 @@ function RelevantProducts() {
             centeredSlides={true}
             autoplay={{
               delay: 1500,
+              reverseDirection: language == "ar",
+              disableOnInteraction: true,
             }}
             loop={true}
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -213,10 +298,10 @@ function RelevantProducts() {
                   src={products[0].src}
                   width={174}
                   height={183}
-                  alt={products[0].alt}
+                  alt={products[0].alt[language]}
                 />
                 <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  {products[0].name}
+                  {products[0].name[language]}
                 </h2>
               </motion.div>
             </SwiperSlide>
@@ -234,10 +319,10 @@ function RelevantProducts() {
                   src={products[1].src}
                   width={174}
                   height={183}
-                  alt={products[1].alt}
+                  alt={products[1].alt[language]}
                 />
                 <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  {products[1].name}
+                  {products[1].name[language]}
                 </h2>
               </motion.div>
             </SwiperSlide>
@@ -255,10 +340,10 @@ function RelevantProducts() {
                   src={products[2].src}
                   width={174}
                   height={183}
-                  alt={products[2].alt}
+                  alt={products[2].alt[language]}
                 />
                 <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  {products[2].name}
+                  {products[2].name[language]}
                 </h2>
               </motion.div>
             </SwiperSlide>
@@ -276,10 +361,10 @@ function RelevantProducts() {
                   src={products[3].src}
                   width={174}
                   height={183}
-                  alt={products[3].alt}
+                  alt={products[3].alt[language]}
                 />
                 <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  {products[3].name}
+                  {products[3].name[language]}
                 </h2>
               </motion.div>
             </SwiperSlide>
@@ -297,10 +382,10 @@ function RelevantProducts() {
                   src={products[4].src}
                   width={174}
                   height={183}
-                  alt={products[4].alt}
+                  alt={products[4].alt[language]}
                 />
                 <h2 className="text-[#2C2C2C] font-sans text-xl font-bold relative z-50 mt-4">
-                  {products[4].name}
+                  {products[4].name[language]}
                 </h2>
               </motion.div>
             </SwiperSlide>
@@ -313,7 +398,7 @@ function RelevantProducts() {
       <Button
         variant="default"
         className="relative top-24 rounded-full text-xl px-8 py-6 mt-5 xl:hidden">
-        Plus
+        {Language.productSection.button.text[language]}{" "}
       </Button>
     </section>
   );

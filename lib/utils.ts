@@ -1,6 +1,7 @@
 import moment from "moment";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import LANG_JSON from "@/public/language.json";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -13,3 +14,5 @@ export function capitalizeFirstLetter(val: string) {
 export function formatDate(dateString: string) {
   return moment(dateString).format("dddd | MMMM DD, YYYY");
 }
+
+export const Language = LANG_JSON;

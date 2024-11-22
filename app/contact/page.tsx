@@ -13,6 +13,8 @@ import PainterFinder from "@/components/PainterFinder";
 import { ChevronRight } from "lucide-react";
 
 function HeroSection() {
+  const { language } = useLanguage();
+
   return (
     <div className="flex flex-col justify-center items-center h-[500px] text-white w-full">
       <Navbar />
@@ -36,7 +38,9 @@ function HeroSection() {
       </Swiper>
 
       <div className="absolute inset-1/5 z-20 flex items-center justify-center xl:w-2/3 m-4 flex-col">
-        <h1 className="text-5xl font-semibold">Contact Us</h1>
+        <h1 className="text-5xl font-semibold">
+        {Language.contactForm.title[language]}
+        </h1>
         <h3 className="flex justify-center items-center relative top-12 text-md">
           <a href="/">Acceuil</a> <ChevronRight height={18} width={18} />
           Contact
@@ -50,17 +54,21 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useLanguage } from "@/zustand";
+import { Language } from "@/lib/utils";
 
 function ContactForm() {
+  const { language } = useLanguage();
   return (
-    <div className="flex lg:flex-row flex-col justify-center items-center w-full p-6 my-24">
+    <section
+      dir={language == "ar" ? "rtl" : "ltr"}
+      className="flex lg:flex-row flex-col justify-center items-center w-full p-6 my-24">
       <div className="mb-8 lg:w-1/3 mx-2">
         <h1 className="text-4xl font-bold mb-4 text-center lg:text-start font-open text-black">
-          Contactez nous
+          {Language.contactForm.title[language]}
         </h1>
         <p className="text-muted-foreground font-open lg:text-start text-center text-black">
-          Contactez-nous pour toute demande, retour ou assistance – nous sommes
-          là pour vous aider !
+          {Language.contactForm.description[language]}
         </p>
       </div>
 
@@ -71,7 +79,7 @@ function ContactForm() {
         className="space-y-6 w-3/5">
         <div>
           <Label className="text-black" htmlFor="name">
-            Name
+            {Language.contactForm.nameLabel[language]}
           </Label>
           <Input
             id="name"
@@ -84,7 +92,7 @@ function ContactForm() {
 
         <div>
           <Label className="text-black" htmlFor="email">
-            Email
+            {Language.contactForm.emailLabel[language]}
           </Label>
           <Input
             id="email"
@@ -97,7 +105,7 @@ function ContactForm() {
 
         <div>
           <Label className="text-black" htmlFor="message">
-            Message
+            {Language.contactForm.messageLabel[language]}
           </Label>
           <Textarea
             id="message"
@@ -108,10 +116,10 @@ function ContactForm() {
         </div>
 
         <Button type="submit" className="w-40 bg-black hover:bg-black/90">
-          Envoyer
+          {Language.contactForm.submitButton[language]}
         </Button>
       </form>
-    </div>
+    </section>
   );
 }
 

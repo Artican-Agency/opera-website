@@ -1,3 +1,4 @@
+"use client";
 import AboutUs from "@/components/AboutUs";
 import AnnouncementSection from "@/components/AnnouncementSection";
 import BackgroundSlider from "@/components/BackgroundSlider";
@@ -13,16 +14,27 @@ import Scroller5 from "@/components/Scroller5";
 import Scroller6 from "@/components/Scroller6";
 import StatSection from "@/components/StatSection";
 import Testimonial from "@/components/Testimonials";
+import { useLanguage } from "@/zustand";
 
 export default function Home() {
+  const { language } = useLanguage();
+
+  const title = {
+    en: "Perfection in Colors",
+    fr: "La Perfection des Couleurs",
+    ar: "الكمال في الألوان",
+  };
+
   return (
     <main className="bg-white">
-      <BackgroundSlider />
+      <div className="relative z-10">
+        <BackgroundSlider />
+      </div>
       <StatSection />
       <RelevantProducts />
       <div className="flex flex-col justify-center items-center mt-24">
         <h1 className=" text-black font-sans font-bold text-5xl xl:text-start text-center mb-12">
-          Nos Avantages
+          {title[language]}
         </h1>
         <div className="relative top-36">
           <Scroller />

@@ -19,8 +19,12 @@ import { useParams } from "next/navigation";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { capitalizeFirstLetter } from "@/lib/utils";
+import { Language } from "@/lib/utils";
+import { useLanguage } from "@/zustand";
 
 function HeroSection() {
+  const { language } = useLanguage();
+
   const { category } = useParams() ?? {};
   return (
     <div className="flex flex-col justify-center items-center w-full h-[500px] text-white">
@@ -45,7 +49,9 @@ function HeroSection() {
       </Swiper>
 
       <div className="absolute inset-1/5 z-20 flex items-center justify-center xl:w-2/3 m-4 flex-col">
-        <h1 className="text-5xl font-semibold">Produits</h1>
+        <h1 className="text-5xl font-semibold">
+          {Language.productPage.heroSection.title[language]}
+        </h1>
         <h3 className="flex justify-center items-center relative top-12 text-md">
           <a href="/">Acceuil</a> <ChevronRight height={18} width={18} />
           Produit

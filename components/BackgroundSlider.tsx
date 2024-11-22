@@ -13,7 +13,7 @@ import Navbar from "./Navbar";
 
 export default function BackgroundSlider() {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-[800px]">
+    <section className="flex flex-col justify-center items-center w-full h-[800px]">
       <Navbar />
       {/* Swiper Setup */}
       <Swiper
@@ -45,6 +45,6 @@ export default function BackgroundSlider() {
       <div className="absolute inset-0 z-20 flex items-center justify-around xl:w-2/3 m-4">
         <HeroSection />
       </div>
-    </div>
+    </section>
   );
 }

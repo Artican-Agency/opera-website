@@ -5,15 +5,18 @@ import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
-import { instance } from "@/instance"; // Make sure this is properly configured
-import { formatDate } from "@/lib/utils";
+import { instance } from "@/instance";
+import { formatDate, Language } from "@/lib/utils";
 
 import "swiper/css";
+import { useLanguage } from "@/zustand";
 
 function BlogRecent() {
   const [blogs, setBlogs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
+
+  const { language } = useLanguage();
 
   useEffect(() => {
     let isMobile = window.matchMedia("(max-width: 800px)").matches;
@@ -39,15 +42,18 @@ function BlogRecent() {
 
   return (
     <section className="bg-white flex flex-col justify-between items-center h-full lg:px-24 px-4">
-      <div className="flex justify-between text-center w-full">
+      <div
+        dir={language == "ar" ? "rtl" : "ltr"}
+        className="flex justify-between text-center w-full">
         <h1 className="text-[#2F2F2F] text-5xl font-semibold">
-          Les blogs récents
+          {Language.recentBlogs.title[language]}
         </h1>
 
         <a
+          dir={language == "ar" ? "rtl" : "ltr"}
           className="xl:flex hidden justify-center items-center text-[#2F2F2F] text-sm font-semibold font-open"
           href="/blogs">
-          Plus de blogs
+          {Language.recentBlogs.moreBlogs.text[language]}
           <span>
             <ArrowRight width={24} height={24} />
           </span>
@@ -58,6 +64,8 @@ function BlogRecent() {
         <Swiper
           autoplay={{
             delay: 3000,
+            reverseDirection: language == "ar",
+            disableOnInteraction: true,
           }}
           slidesPerView={isMobile ? 1 : 1.5}
           modules={[Autoplay]}

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { motion } from "motion/react";
+import { useLanguage } from "@/zustand";
+import { Language } from "@/lib/utils";
 
 export default function vProductCard({
   product,
@@ -12,6 +14,8 @@ export default function vProductCard({
     product_pdf: string;
   };
 }) {
+  const { language } = useLanguage();
+
   return (
     <motion.div
       className="cursor-pointer"
@@ -36,9 +40,9 @@ export default function vProductCard({
         <CardFooter className="flex justify-center pb-6">
           <a
             href={product.product_pdf}
-            download
+            target="_blank"
             className="font-open bg-primary-ui hover:bg-[#d8a72a] text-[#171515] text-sm font-semibold px-4 py-2 rounded-full shadow-lg transition duration-300">
-            Fiche Technique
+            {Language.productPage.productCard.cta.text[language]}
           </a>
         </CardFooter>
       </Card>

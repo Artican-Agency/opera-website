@@ -1,0 +1,448 @@
+{
+  "navbar": {
+    "logo": {
+      "alt": {
+        "en": "Opera Logo",
+        "fr": "Logo Opera",
+        "ar": "شعار أوبرا"
+      }
+    },
+    "links": {
+      "home": {
+        "en": "Home",
+        "fr": "Accueil",
+        "ar": "الرئيسية"
+      },
+      "products": {
+        "en": "Products",
+        "fr": "Produits",
+        "ar": "المنتجات"
+      },
+      "products_submenu": {
+        "coatings": {
+          "en": "Coatings",
+          "fr": "Enduits",
+          "ar": "الطلاءات"
+        },
+        "decor": {
+          "en": "Decor",
+          "fr": "Décors",
+          "ar": "الديكور"
+        },
+        "buildings": {
+          "en": "Buildings",
+          "fr": "Bâtiments",
+          "ar": "المباني"
+        }
+      },
+      "blog": {
+        "en": "Blog & Videos",
+        "fr": "Blog & Vidéos",
+        "ar": "المدونة والفيديوهات"
+      },
+      "contact": {
+        "en": "Contact",
+        "fr": "Contact",
+        "ar": "اتصل بنا"
+      }
+    }
+  },
+  "hero": {
+    "title": {
+      "en": "Express your style with",
+      "fr": "Exprimez votre style avec",
+      "ar": "عبر عن أسلوبك مع"
+    },
+    "subtitle": {
+      "en": "Paint",
+      "fr": "Peinture",
+      "ar": "الدهان"
+    },
+    "description": {
+      "en": "A touch of elegance and durability for every space",
+      "fr": "Une touche d'élégance et de durabilité pour chaque espace",
+      "ar": "لمسة من الأناقة والمتانة لكل مساحة"
+    },
+    "buttons": {
+      "find_product": {
+        "en": "Find your product",
+        "fr": "Trouvez votre produit",
+        "ar": "اعثر على منتجك"
+      },
+      "visit_works": {
+        "en": "Visit our works",
+        "fr": "Visitez nos travaux",
+        "ar": "تصفح أعمالنا"
+      }
+    }
+  },
+  "statSection": {
+    "stats": [
+      {
+        "title": {
+          "en": "Sales Points",
+          "fr": "Points de vente",
+          "ar": "نقاط البيع"
+        },
+        "value": "80+"
+      },
+      {
+        "title": {
+          "en": "Products Manufactured",
+          "fr": "Produits fabriqués",
+          "ar": "المنتجات المصنعة"
+        },
+        "value": "61+"
+      },
+      {
+        "title": {
+          "en": "Experience",
+          "fr": "Expérience",
+          "ar": "الخبرة"
+        },
+        "value": "10",
+        "unit": {
+          "en": "+years",
+          "fr": "+ans",
+          "ar": "سنوات +"
+        }
+      }
+    ]
+  },
+  "productSection": {
+    "title": {
+      "en": "Work with an excellent Product.",
+      "fr": "Travail avec un excellent Produit.",
+      "ar": "اعمل مع منتج ممتاز."
+    },
+    "subtitle": {
+      "en": "Offers high-quality paints, combining innovation, durability, and eco-friendliness for all your painting projects.",
+      "fr": "Offre des peintures de haute qualité, alliant innovation, durabilité et respect de l'environnement, pour tous vos projets de peinture.",
+      "ar": "يقدم دهانات عالية الجودة تجمع بين الابتكار والمتانة والاحترام للبيئة لجميع مشاريع الطلاء الخاصة بك."
+    },
+    "button": {
+      "text": {
+        "en": "More",
+        "fr": "Plus",
+        "ar": "المزيد"
+      },
+      "link": "/products"
+    }
+  },
+  "testimonials": {
+    "title": {
+      "en": "Testimonials",
+      "fr": "Témoignages",
+      "ar": "آراء العملاء"
+    },
+    "reviews": [
+      {
+        "text": {
+          "en": "Since I started using Opera Paints products, my decoration projects have taken on a new dimension. The exceptional quality of the paints, combined with their commitment to durability and the environment, gives me confidence with each application. Opera Paints is undoubtedly the ideal choice for impeccable finishing work.",
+          "fr": "Depuis que j'utilise les produits d'Opéra Peintures, mes projets de décoration ont pris une nouvelle dimension. La qualité exceptionnelle des peintures, combinée à leur engagement pour la durabilité et l'environnement, me donne confiance à chaque application. Opéra Peintures est sans aucun doute le choix idéal pour un travail de finition impeccable.",
+          "ar": "منذ أن بدأت في استخدام منتجات أوبرا للدهانات، اكتسبت مشاريع الديكور الخاصة بي بُعداً جديداً. الجودة الاستثنائية للدهانات، إلى جانب التزامهم بالاستدامة والبيئة، تمنحني الثقة مع كل تطبيق. أوبرا للدهانات هي بلا شك الخيار الأمثل لعمل تشطيب مثالي."
+        },
+        "author": "Nadir Bouzid"
+      },
+      {
+        "text": {
+          "en": "Opera Paints offers a range of high-quality paints that stands out for its innovation and compliance with environmental standards. As a professional, I appreciate their dedication to providing efficient and safe products. The variety of their colors and finishes allows me to meet my clients' most demanding tastes.",
+          "fr": "Opéra Peintures offre une gamme de peintures de haute qualité qui se distingue par son innovation et son respect des normes environnementales. En tant que professionnel, j'apprécie leur dévouement à fournir des produits performants et sûrs. La variété de leurs couleurs et finitions me permet de répondre aux goûts les plus exigeants de mes clients.",
+          "ar": "تقدم أوبرا للدهانات مجموعة من الدهانات عالية الجودة التي تتميز بابتكارها والتزامها بالمعايير البيئية. كمحترف، أقدر تفانيهم في تقديم منتجات فعالة وآمنة. تنوع ألوانهم وتشطيباتهم يسمح لي بتلبية أذواق عملائي الأكثر تطلباً."
+        },
+        "author": "Yasmina Cherif"
+      },
+      {
+        "text": {
+          "en": "I highly recommend Opera Paints to anyone looking for reliable and aesthetic paint products. Their team is incredibly helpful, and the in-store demonstrations make product selection much easier. The attention to customer details and preferences really makes a difference.",
+          "fr": "Je recommande vivement Opéra Peintures à quiconque cherche des produits de peinture fiables et esthétiques. Leur équipe est incroyablement serviable, et les démonstrations en boutique facilitent grandement le choix des produits. L'attention portée aux détails et aux préférences de leurs clients fait vraiment la différence.",
+          "ar": "أوصي بشدة بأوبرا للدهانات لأي شخص يبحث عن منتجات دهان موثوقة وجمالية. فريقهم مفيد للغاية، والعروض التوضيحية في المتجر تسهل اختيار المنتجات بشكل كبير. الاهتمام بتفاصيل وتفضيلات العملاء يحدث فرقاً حقيقياً."
+        },
+        "author": "Karim Bensalem"
+      }
+    ]
+  },
+  "footer": {
+    "description": {
+      "en": "Offering high-quality paints, combining innovation, durability, and environmental respect for all your painting projects.",
+      "fr": "Offre des peintures de haute qualité, alliant innovation, durabilité et respect de l'environnement, pour tous vos projets de peinture.",
+      "ar": "نقدم دهانات عالية الجودة تجمع بين الابتكار والمتانة واحترام البيئة لجميع مشاريع الطلاء الخاصة بك"
+    },
+    "links": {
+      "about": {
+        "en": "Who We Are",
+        "fr": "Qui sommes nous",
+        "ar": "من نحن"
+      },
+      "products": {
+        "en": "Products",
+        "fr": "Produits",
+        "ar": "المنتجات"
+      },
+      "blog": {
+        "en": "Blog",
+        "fr": "Blog",
+        "ar": "المدونة"
+      },
+      "contact": {
+        "en": "Contact Us",
+        "fr": "Contactez nous",
+        "ar": "اتصل بنا"
+      },
+      "announcement": {
+        "en": "Announcement",
+        "fr": "Annonce",
+        "ar": "إعلان"
+      },
+      "team": {
+        "en": "Our Team",
+        "fr": "Notre équipe",
+        "ar": "فريقنا"
+      }
+    },
+    "legal": {
+      "terms": {
+        "en": "Terms & Conditions",
+        "fr": "Terms & Conditions",
+        "ar": "الشروط والأحكام"
+      },
+      "privacy": {
+        "en": "Privacy Policy",
+        "fr": "Privacy Policy",
+        "ar": "سياسة الخصوصية"
+      },
+      "copyright": {
+        "en": "Copyright 2024 Artican Agency. All Rights Reserved.",
+        "fr": "Copyright 2024 Artican Agency. Tous droits réservés.",
+        "ar": "حقوق النشر 2024 أرتيكان أجنسي. جميع الحقوق محفوظة."
+      }
+    },
+    "download": {
+      "googlePlay": {
+        "alt": {
+          "en": "Get it on Google Play",
+          "fr": "Disponible sur Google Play",
+          "ar": "احصل عليه على جوجل بلاي"
+        }
+      },
+      "appStore": {
+        "alt": {
+          "en": "Download on the App Store",
+          "fr": "Télécharger sur l'App Store",
+          "ar": "تحميل من متجر التطبيقات"
+        }
+      }
+    }
+  },
+  "RelevantProducts": {
+    "title": {
+      "en": "Work with an Excellent Product",
+      "fr": "Travail avec un excellent Produit.",
+      "ar": "العمل مع منتج ممتاز."
+    },
+    "description": {
+      "en": "Offering high-quality paints, combining innovation, durability, and respect for the environment for all your painting projects.",
+      "fr": "Offre des peintures de haute qualité, alliant innovation, durabilité et respect de l'environnement, pour tous vos projets de peinture.",
+      "ar": "نقدم دهانات عالية الجودة تجمع بين الابتكار والمتانة واحترام البيئة لجميع مشاريع الطلاء الخاصة بك."
+    },
+    "cta": {
+      "text": {
+        "en": "More",
+        "fr": "Plus",
+        "ar": "المزيد"
+      }
+    }
+  },
+  "vProductCard": {
+    "cta": {
+      "text": {
+        "en": "Technical Data Sheet",
+        "fr": "Fiche Technique",
+        "ar": "الورقة التقنية"
+      }
+    }
+  },
+  "recentBlogs": {
+    "title": {
+      "en": "Recent Blogs",
+      "fr": "Les blogs récents",
+      "ar": "المدونات الأخيرة"
+    },
+    "moreBlogs": {
+      "text": {
+        "en": "More Blogs",
+        "fr": "Plus de blogs",
+        "ar": "المزيد من المدونات"
+      },
+      "link": "/blogs"
+    }
+  },
+  "aboutUs": {
+    "title": {
+      "en": "Who are we?",
+      "fr": "Qui sommes nous ?",
+      "ar": "من نحن؟"
+    },
+    "description": {
+      "en": "Founded in 2014 in Batna, Opera Paints specializes in the manufacturing, production, and export of high-quality paints that meet durability and environmental safety standards. Since its inception, the company has established itself as one of the leaders in the industry in Algeria and North Africa. Opera Paints offers more than 60 different products, including architectural and decorative paints, to meet the needs of its customers. Currently, its products are available in over 80 points of sale in Algeria, as well as in Côte d'Ivoire and Burkina Faso.",
+      "fr": "Fondée en 2014 à Batna, Opera Peintures est spécialisée dans la fabrication, production et exportation de peintures de haute qualité, respectant les normes de durabilité et de sécurité environnementale. Depuis sa création, l'entreprise s'est imposée comme l'un des leaders du secteur en Algérie et en Afrique du Nord. Opera Peintures propose plus de 60 produits différents, y compris des peintures architecturales et décoratives, pour répondre aux besoins de ses clients. Actuellement, ses produits sont disponibles dans plus de 80 points de vente, en Algérie ainsi qu'en Côte d'Ivoire et au Burkina Faso.",
+      "ar": "تأسست أوبرا للدهانات في عام 2014 في باتنة، وهي متخصصة في تصنيع وإنتاج وتصدير الدهانات عالية الجودة التي تفي بمعايير المتانة والسلامة البيئية. منذ إنشائها، رسخت الشركة مكانتها كواحدة من قادة الصناعة في الجزائر وشمال إفريقيا. تقدم أوبرا للدهانات أكثر من 60 منتجًا مختلفًا، بما في ذلك الدهانات المعمارية والزخرفية، لتلبية احتياجات عملائها. حاليًا، تتوفر منتجاتها في أكثر من 80 نقطة بيع في الجزائر وكذلك في كوت ديفوار وبوركينا فاسو."
+    },
+    "features": [
+      {
+        "iconAlt": {
+          "en": "One icon",
+          "fr": "Icône Qualité",
+          "ar": "أيقونة الجودة"
+        },
+        "title": {
+          "en": "Unmatched Quality",
+          "fr": "Qualité inégalée",
+          "ar": "جودة لا مثيل لها"
+        },
+        "description": {
+          "en": "Our products are made with premium materials to ensure a flawless and durable finish.",
+          "fr": "Nos produits sont fabriqués avec des matériaux de première qualité pour garantir une finition impeccable et durable.",
+          "ar": "يتم تصنيع منتجاتنا من مواد عالية الجودة لضمان تشطيب مثالي ودائم."
+        }
+      },
+      {
+        "iconAlt": {
+          "en": "Innovation icon",
+          "fr": "Icône Innovation",
+          "ar": "أيقونة الابتكار"
+        },
+        "title": {
+          "en": "Continuous Innovation",
+          "fr": "Innovation continue",
+          "ar": "ابتكار مستمر"
+        },
+        "description": {
+          "en": "We integrate the latest technologies and market trends to offer paint solutions that meet modern demands.",
+          "fr": "Nous intégrons les dernières technologies et tendances du marché pour offrir des solutions de peinture qui répondent aux exigences modernes.",
+          "ar": "نقوم بدمج أحدث التقنيات والاتجاهات السوقية لتقديم حلول دهان تلبي المتطلبات الحديثة."
+        }
+      },
+      {
+        "iconAlt": {
+          "en": "Resistance icon",
+          "fr": "Icône Résistance",
+          "ar": "أيقونة المقاومة"
+        },
+        "title": {
+          "en": "Exceptional Resistance",
+          "fr": "Résistance exceptionnelle",
+          "ar": "مقاومة استثنائية"
+        },
+        "description": {
+          "en": "Whether against weather, UV rays, or stains, our paints are designed to last and protect your walls.",
+          "fr": "Que ce soit contre les intempéries, les rayons UV ou les taches, nos peintures sont conçues pour durer et protéger vos murs.",
+          "ar": "سواء ضد الظروف الجوية، أشعة الشمس فوق البنفسجية، أو البقع، تم تصميم دهاناتنا لتدوم وتحمي جدرانك."
+        }
+      },
+      {
+        "iconAlt": {
+          "en": "Guarantee icon",
+          "fr": "Icône Garantie",
+          "ar": "أيقونة الضمان"
+        },
+        "title": {
+          "en": "Customer Satisfaction Guaranteed",
+          "fr": "Satisfaction client garantie",
+          "ar": "ضمان رضا العملاء"
+        },
+        "description": {
+          "en": "Your satisfaction is our priority. We support you at every step to ensure the final result exceeds your expectations.",
+          "fr": "Votre satisfaction est notre priorité. Nous vous accompagnons à chaque étape pour vous assurer que le résultat final dépasse vos attentes.",
+          "ar": "رضا العملاء هو أولويتنا. نرافقك في كل خطوة لضمان أن يتجاوز النتيجة النهائية توقعاتك."
+        }
+      }
+    ],
+    "image": {
+      "src": "/why-choose-us.png",
+      "alt": {
+        "en": "Paintbrush with yellow paint splash",
+        "fr": "Pinceau avec éclaboussures de peinture jaune",
+        "ar": "فرشاة دهان مع دفقة طلاء صفراء"
+      }
+    }
+  },
+  "painterFinder": {
+    "title": {
+      "en": "Find Your Painter",
+      "fr": "Trouvez votre peintre",
+      "ar": "اعثر على دهان"
+    },
+    "description": {
+      "en": "Your painter is available now.",
+      "fr": "Votre peintre est disponible maintenant.",
+      "ar": "دهان الخاص بك متاح الآن."
+    },
+    "button": {
+      "text": {
+        "en": "Details",
+        "fr": "Détails",
+        "ar": "التفاصيل"
+      },
+      "link": "https://play.google.com/store/apps/details?id=com.chemsou00.allo_painter&hl=fr_CA"
+    },
+    "image": {
+      "src": "/pntr.png",
+      "alt": {
+        "en": "Painter with tools",
+        "fr": "Peintre avec outils",
+        "ar": "دهان مع أدوات"
+      }
+    }
+  },
+  "contactForm": {
+    "title": {
+      "en": "Contact Us",
+      "fr": "Contactez nous",
+      "ar": "اتصل بنا"
+    },
+    "description": {
+      "en": "Contact us for any inquiries, returns, or assistance – we're here to help!",
+      "fr": "Contactez-nous pour toute demande, retour ou assistance – nous sommes là pour vous aider !",
+      "ar": "اتصل بنا لأي استفسارات أو عودة أو مساعدة – نحن هنا للمساعدة!"
+    },
+    "nameLabel": {
+      "en": "Name",
+      "fr": "Nom",
+      "ar": "الاسم"
+    },
+    "emailLabel": {
+      "en": "Email",
+      "fr": "Email",
+      "ar": "البريد الإلكتروني"
+    },
+    "messageLabel": {
+      "en": "Message",
+      "fr": "Message",
+      "ar": "الرسالة"
+    },
+    "submitButton": {
+      "en": "Send",
+      "fr": "Envoyer",
+      "ar": "إرسال"
+    }
+  },
+  "productPage": {
+    "heroSection": {
+      "title": {
+        "en": "Products",
+        "fr": "Produits",
+        "ar": "المنتجات"
+      }
+    },
+    "productCard": {
+      "cta": {
+        "text": {
+          "en": "View Details",
+          "fr": "Fiche Technique",
+          "ar": "عرض التفاصيل"
+        }
+      }
+    }
+  }
+}

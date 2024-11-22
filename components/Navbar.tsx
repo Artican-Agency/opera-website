@@ -10,18 +10,31 @@ import {
   NavigationMenuTrigger,
 } from "./ui/Navigation";
 import Link from "next/link";
-import { Dialog, DialogClose, DialogContent, DialogTrigger } from "./ui/dialog";
 import { motion } from "motion/react";
+import { useLanguage } from "@/zustand";
+import { Language } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "./ui/dropdown-menu";
 
 export default function Navbar({ className }: { className?: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { switchLanguage, language } = useLanguage();
+
+  const handleLanguageChange = (newLanguage: "en" | "fr" | "ar") => {
+    switchLanguage(newLanguage);
+  };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
     <nav
-      className={`absolute top-0 z-50 flex items-center justify-center w-full mb-4 text-white ${className}`}>
-      <div className="flex xl:mx-12 lg:mx-2 justify-between items-center w-full relative z-50">
+      dir={language == "ar" ? "rtl" : "ltr"}
+      className={`absolute top-0 z-[80] flex items-center justify-center w-full mb-4 text-white ${className}`}>
+      <div className="flex xl:mx-12 lg:mx-2 justify-between items-center w-full relative z-[80]">
         <div className="flex justify-between items-center w-full px-4 sm:px-6 lg:px-0">
           <motion.a
             whileHover={{
@@ -43,9 +56,24 @@ export default function Navbar({ className }: { className?: string }) {
               <CircleHelp color="white" />
             </a>
 
-            <button className="bg-transparent">
-              <Globe color="white" />
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="bg-transparent mx-4">
+                  <Globe color="white" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-black text-white relative z-[80]">
+                <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
+                  English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("fr")}>
+                  Français
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("ar")}>
+                  العربية
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
 
             <button onClick={toggleMenu}>
               <Menu color="white" height={30} width={30} />
@@ -72,25 +100,14 @@ export default function Navbar({ className }: { className?: string }) {
                 }}
                 className="text-white"
                 href="/">
-                Accueil
+                {Language.navbar.links.home[language]}
               </motion.a>
             </li>
-            {/* <li className='font-sans'>
-              <motion.a
-                whileHover={{
-                  scale: 1.2,
-                }}
-                href='/color'
-                className='whitespace-nowrap text-white'
-              >
-                Color Picker
-              </motion.a>
-            </li> */}
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-md font-light text-white">
-                    Produits
+                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-md font-light text-white mx-2">
+                    {Language.navbar.links.products[language]}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-transparent">
                     <div className="backdrop-blur-sm bg-transparent p-4 w-[200px] rounded-md">
@@ -99,21 +116,33 @@ export default function Navbar({ className }: { className?: string }) {
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/enduits">
-                            Enduits
+                            {
+                              Language.navbar.links.products_submenu.coatings[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/decors">
-                            Décors
+                            {
+                              Language.navbar.links.products_submenu.decor[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/batiments">
-                            Bâtiments
+                            {
+                              Language.navbar.links.products_submenu.buildings[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                       </div>
@@ -124,41 +153,51 @@ export default function Navbar({ className }: { className?: string }) {
             </NavigationMenu>
             <li className="font-sans">
               <a href="/blogs" className="text-white">
-                Blog & Vidéos
+                {Language.navbar.links.blog[language]}
               </a>
             </li>
             <li className="font-sans">
               <a href="/contact" className="text-white">
-                Contact
+                {Language.navbar.links.contact[language]}
               </a>
             </li>
           </ul>
           <div className="flex justify-center space-x-2 items-center">
-            <button className="bg-transparent">
+            <button className="bg-transparent mx-4">
               <CircleHelp color="white" />
             </button>
 
-            <button className="bg-transparent">
-              <Globe color="white" />
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="bg-transparent mx-4">
+                  <Globe color="white" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-black text-white relative z-[80]">
+                <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
+                  English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("fr")}>
+                  Français
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("ar")}>
+                  العربية
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
 
         <div className="hidden xl:flex justify-around items-center w-full space-x-12">
           <ul className="flex justify-evenly items-center space-x-12">
             <li className="font-sans">
-              <a href="/">Accueil</a>
+              <a href="/">{Language.navbar.links.home[language]}</a>
             </li>
-            {/* <li className='font-sans'>
-              <a href='/color' className='whitespace-nowrap'>
-                Color Picker
-              </a>
-            </li> */}
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
-                  <NavigationMenuTrigger className="bg-transparent hover:bg-transparent text-md font-light">
-                    Produits
+                  <NavigationMenuTrigger className="mx-2 bg-transparent hover:bg-transparent text-md font-light">
+                    {Language.navbar.links.products[language]}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent className="bg-transparent">
                     <div className="backdrop-blur-sm bg-transparent p-4 w-[200px] rounded-md">
@@ -167,21 +206,33 @@ export default function Navbar({ className }: { className?: string }) {
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/enduits">
-                            Enduits
+                            {
+                              Language.navbar.links.products_submenu.coatings[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/decors">
-                            Décors
+                            {
+                              Language.navbar.links.products_submenu.decor[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                         <NavigationMenuLink asChild>
                           <Link
                             className="block space-y-1 rounded-md p-3 leading-none transition-colors hover:bg-white/10 hover:text-white text-gray-100"
                             href="/produit/batiments">
-                            Bâtiments
+                            {
+                              Language.navbar.links.products_submenu.buildings[
+                                language
+                              ]
+                            }
                           </Link>
                         </NavigationMenuLink>
                       </div>
@@ -191,20 +242,35 @@ export default function Navbar({ className }: { className?: string }) {
               </NavigationMenuList>
             </NavigationMenu>
             <li className="font-sans">
-              <a href="/blogs">Blog & Vidéos</a>
+              <a href="/blogs"> {Language.navbar.links.blog[language]}</a>
             </li>
             <li className="font-sans">
-              <a href="/contact">Contact</a>
+              <a href="/contact">{Language.navbar.links.contact[language]}</a>
             </li>
           </ul>
           <div className="flex justify-center items-center space-x-4">
-            <button className="bg-transparent">
+            <button className="bg-transparent mx-4">
               <CircleHelp color="white" />
             </button>
 
-            <button className="bg-transparent">
-              <Globe color="white" />
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="bg-transparent mx-4">
+                  <Globe color="white" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-black text-white">
+                <DropdownMenuItem onClick={() => handleLanguageChange("en")}>
+                  English
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("fr")}>
+                  Français
+                </DropdownMenuItem>
+                <DropdownMenuItem onClick={() => handleLanguageChange("ar")}>
+                  العربية
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>

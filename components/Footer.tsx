@@ -1,10 +1,15 @@
+import { useLanguage } from "@/zustand";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Language } from "@/lib/utils";
 
 export default function Footer() {
+  const { language } = useLanguage();
   return (
-    <footer className="bg-black text-white">
+    <footer
+      dir={language == "ar" ? "rtl" : "ltr"}
+      className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="mb-8">
           <Image
@@ -19,9 +24,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-3">
           <div>
             <p className="text-gray-300">
-              Offre des peintures de haute qualité, alliant innovation,
-              durabilité et respect de l'environnement, pour tous vos projets de
-              peinture.
+              {Language.footer.description[language]}
             </p>
             <div className="mt-6 flex space-x-4">
               <Link
@@ -45,33 +48,33 @@ export default function Footer() {
 
           <div className="grid gap-4">
             <Link href="#qui" className="text-gray-300 hover:text-white">
-              Qui sommes nous
+              {Language.footer.links.about[language]}
             </Link>
             <Link
               href="/produit/batiments"
               className="text-gray-300 hover:text-white">
-              Produits
+              {Language.footer.links.products[language]}
             </Link>
             <Link href="/blogs" className="text-gray-300 hover:text-white">
-              Blog
+              {Language.footer.links.blog[language]}
             </Link>
             <Link href="/contact" className="text-gray-300 hover:text-white">
-              Contactez nous
+              {Language.footer.links.contact[language]}
             </Link>
           </div>
 
           <div className="grid gap-4">
             <Link href="#announce" className="text-gray-300 hover:text-white">
-              Annonce
+              {Language.footer.links.announcement[language]}
             </Link>
             <Link href="#qui" className="text-gray-300 hover:text-white">
-              Notre équipe
+              {Language.footer.links.about[language]}
             </Link>
             <Link href="#" className="text-gray-300 hover:text-white">
-              Terms & Conditions
+              {Language.footer.legal.terms[language]}
             </Link>
             <Link href="#" className="text-gray-300 hover:text-white">
-              Privacy Policy
+              {Language.footer.legal.privacy[language]}
             </Link>
           </div>
         </div>
@@ -100,13 +103,13 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 flex flex-wrap items-center justify-between border-t border-gray-800 pt-8 text-sm text-gray-400">
-          <p>Copyright 2024 Artican Agency. All Rights Reserved.</p>
+          <p> {Language.footer.legal.copyright[language]}</p>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-white">
-              Terms & Conditions
+              {Language.footer.legal.terms[language]}
             </Link>
             <Link href="#" className="hover:text-white">
-              Privacy Policy
+              {Language.footer.legal.privacy[language]}
             </Link>
           </div>
         </div>
