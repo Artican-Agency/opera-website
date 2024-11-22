@@ -59,7 +59,7 @@ export default function Navbar({ className }: { className?: string }) {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="bg-transparent mx-4">
-                  <Globe color="white" />
+                  <Globe className="mx-2" color="white" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-black text-white relative z-[80]">
@@ -170,7 +170,7 @@ export default function Navbar({ className }: { className?: string }) {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="bg-transparent mx-4">
-                  <Globe color="white" />
+                  <Globe className="mx-2" color="white" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-black text-white relative z-[80]">
@@ -256,7 +256,7 @@ export default function Navbar({ className }: { className?: string }) {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="bg-transparent mx-4">
-                  <Globe color="white" />
+                  <Globe className="mx-2" color="white" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-black text-white">
