@@ -17,7 +17,7 @@ function StatSection() {
           className="font-sans text-sm  max-w-24 text-center text-black font-semibold">
           {Language.statSection.stats[0].title[language]}
         </h3>
-        <p className="font-sans lg:text-4xl text-xl font-bold text-black">
+        <p className="text-center font-sans lg:text-4xl text-xl font-bold text-black">
           {Language.statSection.stats[0].value}
         </p>
       </div>
@@ -35,7 +35,7 @@ function StatSection() {
         <h3 className="font-sans text-sm text-black font-semibold">
           {Language.statSection.stats[2].title[language]}
         </h3>
-        <p className="font-sans lg:text-4xl text-2xl font-bold text-black">
+        <p className="font-sans text-center lg:text-4xl text-2xl font-bold text-black">
           {language == "ar"
             ? Language.statSection.stats[2].unit?.[language]
             : ""}
