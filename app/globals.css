@@ -184,3 +184,7 @@ body {
 .swiper-button-prev::after {
   display: none;
 }
+
+.rtl-image {
+  transform: scaleX(-1);
+}

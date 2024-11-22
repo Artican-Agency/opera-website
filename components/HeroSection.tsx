@@ -9,7 +9,7 @@ function HeroSection() {
   const { switchLanguage, language } = useLanguage();
 
   return (
-    <section className="flex flex-col justify-start items-start font-open">
+    <section className={`flex flex-col ${language == "ar" ? "justify-end items-end" : "justify-start items-star"} t font-open`}>
       <h1 className="md:text-5xl text-4xl font-bold flex flex-col justify-start items-center font-sans text-white">
         {Language.hero.title[language]}
       </h1>
