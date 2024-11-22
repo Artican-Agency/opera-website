@@ -14,7 +14,7 @@ function StatSection() {
       <div className="p-4">
         <h3
           dir={language == "ar" ? "rtl" : "ltr"}
-          className="font-sans text-sm  max-w-24 text-center text-black font-semibold">
+          className="font-sans whitespace-nowrap text-sm  max-w-24 text-center text-black font-semibold">
           {Language.statSection.stats[0].title[language]}
         </h3>
         <p className="text-center font-sans lg:text-4xl text-xl font-bold text-black">
@@ -24,18 +24,18 @@ function StatSection() {
       <div className="p-4">
         <h3
           dir={language == "ar" ? "rtl" : "ltr"}
-          className="font-sans text-sm max-w-24 text-center text-black font-semibold">
+          className="font-sans  whitespace-nowrap text-sm max-w-24 text-center text-black font-semibold">
           {Language.statSection.stats[1].title[language]}
         </h3>
         <p className="font-sans text-center lg:text-4xl text-2xl font-bold text-black">
           {Language.statSection.stats[1].value}
         </p>
       </div>
-      <div className="p-4">
+      <div className="p-4 flex flex-col justify-center items-center">
         <h3 className="font-sans text-sm text-black font-semibold">
           {Language.statSection.stats[2].title[language]}
         </h3>
-        <p className="font-sans text-center lg:text-4xl text-2xl font-bold text-black">
+        <p className="flex flex-col justify-center items-center font-sans text-center lg:text-4xl text-2xl font-bold text-black">
           {language == "ar"
             ? Language.statSection.stats[2].unit?.[language]
             : ""}
