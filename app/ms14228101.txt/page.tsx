@@ -2,23 +2,20 @@
 import React from "react";
 
 function page() {
-  const [fileContent, setFileContent] = React.useState<string | null>(null);
 
-  React.useEffect(() => {
-    const fetchFile = async () => {
-      try {
-        const res = await fetch("/api/get-text");
-
-        const fileContent = await res.json();
-        setFileContent(fileContent.content);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchFile();
-  }, []);
-
-  return <>{fileContent}</>;
+return (
+  <pre>
+    {JSON.stringify(
+      {
+        "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+        "Domain": "operapeinture.com",
+        "Id": "1e6e0292-8835-4fa5-aee3-9e5c92617e6c"
+      },
+      null,
+      2
+    )}
+  </pre>
+);
 }
 
 export default page;
