@@ -18,7 +18,7 @@ function page() {
     fetchFile();
   }, []);
 
-  return <div>{fileContent}</div>;
+  return <>{fileContent}</>;
 }
 
 export default page;
