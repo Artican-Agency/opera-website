@@ -279,7 +279,6 @@ function RelevantProducts() {
             centeredSlides={true}
             autoplay={{
               delay: 1500,
-              reverseDirection: language == "ar",
               disableOnInteraction: true,
             }}
             loop={true}
