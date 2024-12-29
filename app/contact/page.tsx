@@ -70,6 +70,9 @@ function ContactForm() {
         <p className="text-muted-foreground font-open lg:text-start text-center text-black">
           {Language.contactForm.description[language]}
         </p>
+        <p className="text-muted-foreground font-open lg:text-start text-center text-black">
+          +213 551126361
+        </p>
       </div>
 
       <form
