@@ -5,7 +5,7 @@ function Page() {
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
       <h1>Privacy Policy for Opera Peinture</h1>
       <p>
-        <strong>Last Updated:</strong> [Insert Date]
+        <strong>Last Updated:</strong> 2025/01/23
       </p>
 
       <h2>1. Introduction</h2>
@@ -87,9 +87,9 @@ function Page() {
         contact us at:
       </p>
       <p>
-        <strong>Email:</strong> [Insert Contact Email]
+        <strong>Email:</strong> contact@operapeinture.com
         <br />
-        <strong>Website:</strong> [Insert Website URL]
+        <strong>Website:</strong> https://www.operapeinture.com
       </p>
     </div>
   );
