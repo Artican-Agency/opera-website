@@ -11,7 +11,7 @@ import { Autoplay } from "swiper/modules";
 import Navbar from "@/components/Navbar";
 import { ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import { instance } from "@/instance";
+import { getProductsByCategory } from "@/lib/mockData";
 import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
 import PainterFinder from "@/components/PainterFinder";
@@ -72,14 +72,16 @@ export default function Page() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const { data } = await instance.get(`/product/${category}`);
-        setProducts(data.data);
+        const response = await getProductsByCategory(category as string);
+        setProducts(response.data);
       } catch (error) {
         console.error(error);
       }
     };
 
-    fetchProducts();
+    if (category) {
+      fetchProducts();
+    }
   }, [category]);
   return (
     <main className="bg-white h-full overflow-y-hidden w-full">
